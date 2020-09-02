@@ -1,0 +1,20 @@
+[package]
+name = "vapix"
+version = "0.1.0"
+authors = ["Will Glynn <will@willglynn.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = ["hyper"]
+
+[dependencies]
+http = "0.2"
+futures = "0.3"
+digest_auth = "0.2.3"
+
+hyper = { version = "0.13", optional = true }
+
+[dev-dependencies]
+tokio = { version = "0.2", features = ["full"] }
