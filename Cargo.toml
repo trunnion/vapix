@@ -1,7 +1,7 @@
 [package]
 name = "vapix"
 description = "Client for AXIS Communications devices' VAPIX API"
-version = "0.1.0"
+version = "0.1.1-alpha.0"
 authors = ["Will Glynn <will@willglynn.com>"]
 edition = "2018"
 repository = "https://github.com/trunnion/vapix/"
