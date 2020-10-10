@@ -1,20 +1,35 @@
 [package]
 name = "vapix"
-version = "0.1.0"
+description = "Client for AXIS Communications devices' VAPIX API"
+version = "0.1.0-pre1"
 authors = ["Will Glynn <will@willglynn.com>"]
 edition = "2018"
+repository = "https://github.com/trunnion/vapix/"
+license = "MIT OR Apache-2.0"
+keywords = ["axis", "vapix"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# Cargo.toml reference: https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
 default = ["hyper"]
 
 [dependencies]
-http = "0.2"
+chrono = { version = "0.4", features = ["serde"] }
+digest_auth = "0.2"
 futures = "0.3"
-digest_auth = "0.2.3"
-
+http = "0.2"
 hyper = { version = "0.13", optional = true }
+quick-xml = { version = "0.17", features = ["serialize"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_urlencoded = "0.6"
 
 [dev-dependencies]
+criterion = "0.3"
 tokio = { version = "0.2", features = ["full"] }
+pin-project = "0.4"
+lazy_static = "1.4"
+
+[[bench]]
+name = "system_log"
+harness = false

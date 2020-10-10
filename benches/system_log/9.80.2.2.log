@@ -1,0 +1,433 @@
+
+----- System log -----
+
+
+2020-09-07T14:16:29.231-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [495259.832654][T31701] CIFS VFS: Free previous auth_key.response = 8f75f1a0
+2020-09-12T10:04:36.471-05:00 axis-accc8ef7de6b [ CRIT    ] acap-install: Invalid APPNAME "axhttp Rust" (Valid characters are: a-zA-Z0-9 '.' '_' '-' -Start with a letter)
+2020-09-12T10:06:49.966-05:00 axis-accc8ef7de6b [ CRIT    ] acap-install: elflibcheck failed: ldd: /tmp/pack.GpH9go/axhttp: error while loading shared libraries: libaxhttp.so: cannot open shared object file: No such file or directory
+2020-09-12T10:22:25.544-05:00 axis-accc8ef7de6b [ CRIT    ] acap-install: elflibcheck failed: ldd: /tmp/pack.luukZP/axhttp: error while loading shared libraries: libaxhttp.so: cannot open shared object file: No such file or directory
+2020-09-12T10:35:09.173-05:00 axis-accc8ef7de6b [ CRIT    ] acap-install: elflibcheck failed: ldd: /tmp/pack.AYuWEL/axhttp: error while loading shared libraries: libaxhttp.so: cannot open shared object file: No such file or directory
+2020-09-12T10:37:00.150-05:00 axis-accc8ef7de6b [ CRIT    ] acap-install: elflibcheck failed: ldd: /tmp/pack.zaPhtM/axhttp: error while loading shared libraries: libaxhttp.so.1.0: cannot open shared object file: No such file or directory
+2020-09-23T00:03:51.020-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1826509.499151][T29394] CIFS VFS: Server 172.16.6.50 has not responded in 120 seconds. Reconnecting...
+2020-09-23T00:32:15.355-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1828213.845430][ T4547] CIFS VFS: Server 172.16.6.50 has not responded in 120 seconds. Reconnecting...
+2020-09-23T00:32:15.477-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1828213.973455][ T1455] CIFS VFS: Free previous auth_key.response = 8c280900
+2020-09-23T00:34:52.132-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1828370.636094][ T4547] CIFS VFS: Server 172.16.6.50 has not responded in 120 seconds. Reconnecting...
+2020-09-23T00:34:53.301-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1828371.800947][T30884] CIFS VFS: Free previous auth_key.response = 8974ccc0
+2020-09-23T00:48:53.739-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1829212.243776][ T4547] CIFS VFS: Server 172.16.6.50 has not responded in 120 seconds. Reconnecting...
+2020-09-23T00:49:30.420-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1829248.930784][  T885] CIFS VFS: Free previous auth_key.response = 8ede8020
+2020-09-23T17:34:14.922-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1889533.620331][T20713] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T17:34:15.400-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1889534.090421][T20715] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T17:34:55.865-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1889574.551611][T20756] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T17:36:26.382-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1889665.075373][T20857] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T17:39:06.882-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1889825.567722][T21021] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T17:43:17.390-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1890076.084523][T21287] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T17:49:17.845-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1890436.537618][T21665] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T17:57:28.412-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1890927.104871][T22192] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T18:08:08.911-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1891567.602828][T22862] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T18:21:39.463-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1892378.148679][T23695] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T18:38:19.950-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1893378.638313][T24773] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T18:58:30.431-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1894589.117068][T25992] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T19:22:30.891-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1896029.578588][T27495] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T19:50:41.410-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1897720.097190][T29241] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T20:23:21.843-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1899680.530716][T31202] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T21:00:52.359-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1901931.076179][ T1187] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T21:43:32.793-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1904491.520334][ T3830] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T22:31:43.290-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1907382.015640][ T6750] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-23T23:25:43.735-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1910622.519295][T10004] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T00:25:44.240-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1914223.033683][T13580] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T01:25:44.700-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1917823.550250][T17546] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T02:25:45.229-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1921424.115487][T21157] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T03:25:45.679-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1925024.591694][T24791] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T04:25:46.196-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1928625.133669][T28342] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T05:25:46.625-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1932225.595587][T31951] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T06:25:47.079-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1935826.077596][ T3321] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T07:25:47.565-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1939426.588124][ T7041] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T08:25:48.039-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1943027.094295][T10780] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T09:25:48.485-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1946627.541114][T14464] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T10:25:48.953-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1950228.023172][T18170] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T11:25:49.462-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1953828.541396][T21815] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T12:25:49.916-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1957429.014817][T25565] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T13:25:50.468-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1961029.585220][T29276] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T14:25:50.991-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1964630.118130][  T626] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T15:25:51.486-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1968230.625362][ T4510] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T16:25:51.971-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1971831.120345][ T8248] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T17:25:52.440-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1975431.607896][T12065] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T18:25:52.901-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1979032.082872][T15720] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T19:25:53.429-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1982632.625147][T19500] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T20:25:53.860-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1986233.075601][T23159] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T21:25:54.355-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1989833.614045][T26775] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T22:25:54.790-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1993434.083994][T30379] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-24T23:25:55.280-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [1997034.601760][ T1675] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T00:25:55.720-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2000635.067206][ T5348] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T01:25:56.208-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2004235.594457][ T8919] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T02:25:56.639-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2007836.057291][T12553] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T03:25:57.069-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2011436.518807][T16172] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T04:25:57.532-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2015037.000198][T19762] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T05:25:57.992-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2018637.495093][T23425] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T06:25:58.433-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2022237.967355][T27086] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T07:25:58.930-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2025838.489937][T30847] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T08:25:59.430-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2029439.000192][ T2274] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T09:25:59.890-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2033039.484856][ T6051] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T10:26:00.441-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2036640.037023][ T9783] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T11:26:00.889-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2040240.492432][T13536] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T12:26:01.424-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2043841.032180][T17285] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T13:26:01.916-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2047441.540406][T20967] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T14:26:02.438-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2051042.070683][T24737] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T15:26:02.900-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2054642.546761][T28504] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T16:26:03.421-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2058243.074331][T32190] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T17:26:03.880-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2061843.540325][ T3555] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T18:26:04.756-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2065444.418753][ T7879] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T19:26:05.276-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2069044.945340][T11702] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T20:26:05.709-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2072645.390725][T15372] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T21:26:06.207-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2076245.905691][T19077] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T22:26:06.649-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2079846.395061][T22683] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-25T23:26:07.081-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2083446.856397][T26277] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T00:26:07.510-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2087047.324965][T29922] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T01:26:07.969-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2090647.810755][ T1226] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T02:26:08.425-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2094248.304184][ T4914] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T03:26:08.869-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2097848.774700][ T8536] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T04:26:09.390-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2101449.335048][T12141] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T05:26:09.824-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2105049.800508][T15744] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T06:26:10.311-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2108650.318800][T19413] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T07:26:10.771-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2112250.804219][T23068] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T08:26:11.312-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2115851.378700][T26812] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T09:26:11.768-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2119451.841242][T30517] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T10:26:12.341-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2123052.425082][ T1990] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T11:26:12.837-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2126652.916667][ T5729] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T12:26:13.392-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2130253.483310][ T9454] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T13:26:13.881-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2133853.996238][T13111] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T14:26:14.427-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2137454.559027][T16820] CIFS VFS: cifs_mount failed w/return code = -140
+2020-09-26T14:44:42.220-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2138562.342092][ T4547] CIFS VFS: Server 172.16.6.50 has not responded in 120 seconds. Reconnecting...
+2020-09-26T14:44:42.389-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2138562.503795][T17805] CIFS VFS: Free previous auth_key.response = 8f5a74a0
+2020-09-26T14:45:42.480-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2138622.603539][T17805] CIFS VFS: Send error in SessSetup = -11
+2020-09-26T14:45:42.480-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2138622.605499][T17805] CIFS VFS: cifs_mount failed w/return code = -11
+2020-09-26T14:45:42.551-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [2138622.680922][T11549] CIFS VFS: Free previous auth_key.response = 8c04e000
+2020-09-26T15:47:00.582-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Failed to call method Reset on the buffer: Dbus error Timeout was reached.
+2020-09-26T15:48:00.657-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Could not destroy buffer: Timeout was reached
+2020-09-26T15:48:00.698-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recorder Recorder_2 has an error: Dbus error Timeout was reached,         it will be restored automatically when possible
+2020-09-26T16:01:10.550-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Failed to call method Reset on the buffer: Dbus error Timeout was reached.
+2020-09-26T16:02:02.737-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recorder Recorder_2 has an error: Dbus error Timeout was reached,         it will be restored automatically when possible
+2020-09-26T17:00:51.687-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Failed to call method Reset on the buffer: Dbus error Timeout was reached.
+2020-09-26T17:01:25.763-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recorder Recorder_2 has an error: Dbus error Timeout was reached,         it will be restored automatically when possible
+2020-09-27T00:35:03.008-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShareN0 - Storage device lost
+2020-09-27T00:35:03.021-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShare - Storage device lost
+2020-09-27T00:35:03.038-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'disruption'
+2020-09-27T00:35:03.054-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
+2020-09-27T00:35:42.417-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'no disruption'
+2020-09-27T00:35:42.847-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'no disruption'
+2020-09-27T12:23:51.046-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-09-27T12:23:51.065-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SD) to SD_DISK can't be started now. It will be started automatically when possible
+2020-09-27T15:36:02.701-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-04T12:12:06.597-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-04T14:04:23.027-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShareN0 - Storage device lost
+2020-10-04T14:04:23.125-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'disruption'
+2020-10-04T14:04:23.152-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShare - Storage device lost
+2020-10-04T14:04:23.205-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
+2020-10-04T14:05:10.377-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Failed to call method Reset on the buffer: Dbus error Timeout was reached.
+2020-10-04T14:05:28.840-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Could not destroy buffer: GDBus.Error:com.axis.Streamer.Buffer.Error.State: Refusing to destroy after destroy.
+2020-10-04T14:05:28.882-05:00 axis-accc8ef7de6b [ ERR     ] monolith[505]: (monolith) g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+2020-10-04T14:05:29.180-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recorder Recorder_3 has an error: Dbus error Timeout was reached,         it will be restored automatically when possible
+2020-10-04T14:05:37.470-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'no disruption'
+2020-10-04T14:05:38.325-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'no disruption'
+2020-10-08T00:07:53.013-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShareN0 - Storage device lost
+2020-10-08T00:07:53.090-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShare - Storage device lost
+2020-10-08T00:07:53.133-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'disruption'
+2020-10-08T00:07:53.175-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
+2020-10-08T00:09:37.262-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [3122863.409823][T17443] CIFS VFS: Server 172.16.6.50 has not responded in 120 seconds. Reconnecting...
+2020-10-08T00:09:37.389-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [3122863.544052][T17811] CIFS VFS: Free previous auth_key.response = 8f56a9e0
+2020-10-08T00:09:46.968-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'no disruption'
+2020-10-08T00:09:47.554-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'no disruption'
+2020-10-08T00:10:25.001-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShareN0 - Storage device lost
+2020-10-08T00:10:25.021-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShare - Storage device lost
+2020-10-08T00:10:25.070-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'disruption'
+2020-10-08T00:10:25.112-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
+2020-10-08T00:11:14.206-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'no disruption'
+2020-10-08T00:11:44.485-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'no disruption'
+2020-10-08T16:16:41.665-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-08T19:25:20.281-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-08T21:00:36.025-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-08T22:10:36.701-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-08T22:17:14.128-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-08T23:18:06.746-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-08T23:21:15.354-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-08T23:23:35.493-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-08T23:55:00.388-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-09T00:02:46.233-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-09T02:36:38.074-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-09T04:40:08.085-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShareN0 - Storage device lost
+2020-10-09T04:40:08.174-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'disruption'
+2020-10-09T04:40:08.250-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
+2020-10-09T04:40:08.250-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShare - Storage device lost
+2020-10-09T04:40:37.207-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'no disruption'
+2020-10-09T04:40:37.536-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'no disruption'
+2020-10-09T04:56:18.039-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShareN0 - Storage device lost
+2020-10-09T04:56:18.056-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'disruption'
+2020-10-09T04:56:18.084-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShare - Storage device lost
+2020-10-09T04:56:18.128-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
+2020-10-09T04:56:47.180-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'no disruption'
+2020-10-09T04:56:48.216-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'no disruption'
+2020-10-09T05:59:59.575-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [3230286.270967][T15663] CIFS VFS: sends on sock 89dc7480 stuck for 15 seconds
+2020-10-09T05:59:59.575-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [3230286.271075][T15663] CIFS VFS: Error -11 sending data on socket to server
+2020-10-09T06:00:05.033-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: check_disks.c : NetworkShareN0 stat error Input/output error
+2020-10-09T06:00:05.065-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'disruption'
+2020-10-09T06:00:15.448-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
+2020-10-09T06:00:23.022-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShareN0 - Storage device lost
+2020-10-09T06:00:23.106-05:00 axis-accc8ef7de6b [ WARNING ] storage_manager: disk.c:2585[disk_event_removed][Storage device error] Lost device: NetworkShare - Storage device lost
+2020-10-09T06:00:24.366-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [3230311.062659][ T9629] CIFS VFS: Free previous auth_key.response = 8ece1cc0
+2020-10-09T06:00:27.152-05:00 axis-accc8ef7de6b [ ERR     ] kernel: [3230313.846844][T17328] CIFS VFS: Free previous auth_key.response = 8efbaa80
+2020-10-09T06:00:41.946-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShareN0. Status = 'no disruption'
+2020-10-09T06:00:42.794-05:00 axis-accc8ef7de6b [ WARNING ] disks[999]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'no disruption'
+2020-10-09T15:35:33.345-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-09T17:03:58.138-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-09T17:16:29.649-05:00 axis-accc8ef7de6b [ WARNING ] indexer[678]: Recording for Record motion (SMB) to NetworkShare can't be started now. It will be started automatically when possible
+2020-10-09T21:00:11.101-05:00 axis-accc8ef7de6b [ NOTICE  ] syslog-ng[696]: Configuration reload finished;
+2020-10-09T21:00:11.101-05:00 axis-accc8ef7de6b [ NOTICE  ] syslog-ng[696]: Configuration reload request received, reloading configuration;
+2020-10-09T21:00:11.104-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: Started Rotate log files.
+2020-10-09T21:00:11.104-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: logrotate.service: Succeeded.
+2020-10-09T21:01:39.437-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:01:39.437-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:01:39.741-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:01:39.741-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:01:47.087-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:01:47.087-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:02:07.643-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:02:37.337-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:03:27.150-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:03:29.212-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T21:04:17.769-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:04:17.769-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:04:18.002-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:04:18.027-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:04:23.010-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:04:23.023-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:04:43.641-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:05:10.387-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:08:24.703-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:08:24.720-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:08:24.925-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:08:25.016-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:08:27.993-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:08:28.025-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:08:29.908-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:08:31.988-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T21:08:48.786-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:09:19.670-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:09:56.836-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:09:56.836-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:09:56.988-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:09:57.128-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:10:00.790-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:10:00.810-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:10:01.208-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:10:01.240-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:10:04.146-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:10:04.164-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:10:24.573-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:10:52.959-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:13:31.737-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:13:33.789-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T21:14:23.021-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:14:23.021-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:14:23.295-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:14:23.311-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:14:26.190-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:14:26.222-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:14:46.633-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:15:19.283-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:15:45.974-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:15:46.025-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:15:46.330-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:15:46.381-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:15:49.273-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:15:49.273-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:16:09.440-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:16:45.941-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:16:56.711-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:16:56.711-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:16:56.976-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:16:56.976-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:17:00.220-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:17:00.243-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:17:20.571-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:17:50.864-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:18:33.591-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:18:35.642-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T21:23:35.340-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:23:37.408-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T21:26:22.680-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:26:22.680-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:26:22.894-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:26:22.949-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:26:25.901-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:26:25.901-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:26:46.272-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:27:08.957-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:27:29.426-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:27:29.434-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:27:29.698-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:27:29.740-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:27:32.777-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:27:32.777-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:27:53.178-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:28:26.756-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:28:37.968-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:28:40.006-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T21:30:02.501-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: Condition check resulted in Temporary Directory (/tmp) being skipped.
+2020-10-09T21:30:02.561-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: Starting Rotate log files...
+2020-10-09T21:30:05.101-05:00 axis-accc8ef7de6b [ NOTICE  ] syslog-ng[696]: Configuration reload finished;
+2020-10-09T21:30:05.101-05:00 axis-accc8ef7de6b [ NOTICE  ] syslog-ng[696]: Configuration reload request received, reloading configuration;
+2020-10-09T21:30:05.133-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: Started Rotate log files.
+2020-10-09T21:30:05.133-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: logrotate.service: Succeeded.
+2020-10-09T21:30:05.133-05:00 axis-accc8ef7de6b [ NOTICE  ] systemd[1]: logrotate.service: Consumed 1.233s CPU time.
+2020-10-09T21:31:51.342-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:31:51.342-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:31:51.603-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:31:51.703-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:31:55.350-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:31:55.357-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:32:15.726-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:32:54.646-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:33:40.623-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:33:42.694-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T21:36:00.003-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:36:00.003-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:36:00.290-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:36:00.348-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:36:03.176-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:36:03.176-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:36:23.633-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:36:37.147-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:36:37.147-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:36:37.502-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:36:40.576-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:36:40.595-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:37:00.967-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:37:23.296-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:38:42.334-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:38:44.395-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T21:39:17.340-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:39:17.351-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:39:17.586-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:39:17.637-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:39:22.896-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:39:22.896-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:39:31.020-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:39:31.027-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:39:34.040-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:39:34.060-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:39:54.509-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:40:11.992-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:42:04.969-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:42:04.991-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:42:05.187-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:42:05.321-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:42:09.570-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:42:09.590-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:42:29.908-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:42:58.928-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:43:35.638-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:43:35.658-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:43:35.839-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:43:35.928-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:43:38.924-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:43:38.924-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:43:44.927-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:43:46.991-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T21:43:59.431-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:44:30.872-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:45:09.130-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:45:09.173-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:45:09.390-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:45:09.452-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:45:12.656-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:45:12.667-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:45:32.824-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:46:05.821-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:48:31.097-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:48:31.117-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:48:31.337-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:48:31.371-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:48:35.000-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:48:35.030-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:48:46.801-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:48:48.831-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T21:48:55.330-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:49:37.810-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:51:11.021-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:51:11.054-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:51:11.306-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:51:11.306-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:51:14.917-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:51:14.934-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:51:35.188-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:51:42.062-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:51:42.092-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:51:42.329-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:51:46.195-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:51:46.195-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:52:06.725-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:52:30.283-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:53:44.410-05:00 axis-accc8ef7de6b [ INFO    ] dbus-daemon[426]: [system] Activating via systemd: service name='com.axis.ApiDiscovery1' unit='dbus-com.axis.ApiDiscovery1.service' requested by ':1.4323' (uid=155 pid=12830 comm="apidiscovery.cgi ")
+2020-10-09T21:53:45.058-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: Starting API Discovery service...
+2020-10-09T21:53:45.693-05:00 axis-accc8ef7de6b [ INFO    ] dbus-daemon[426]: [system] Successfully activated service 'com.axis.ApiDiscovery1'
+2020-10-09T21:53:45.733-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: Started API Discovery service.
+2020-10-09T21:53:48.933-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:53:50.988-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T21:54:15.813-05:00 axis-accc8ef7de6b [ INFO    ] api-discovery: No request received, starting termination process
+2020-10-09T21:54:15.858-05:00 axis-accc8ef7de6b [ INFO    ] api-discovery: DBus name released
+2020-10-09T21:54:15.896-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: api-discovery.service: Succeeded.
+2020-10-09T21:56:05.973-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:56:05.973-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:56:06.181-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:56:06.270-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:56:09.157-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:56:09.173-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:56:29.446-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:57:02.893-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:57:32.410-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T21:57:32.410-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T21:57:32.600-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T21:57:32.651-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T21:57:37.163-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T21:57:37.163-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T21:57:57.966-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T21:58:28.097-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T21:58:50.889-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T21:58:52.928-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T22:00:07.278-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: Condition check resulted in Temporary Directory (/tmp) being skipped.
+2020-10-09T22:00:07.296-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: Starting Rotate log files...
+2020-10-09T22:00:09.812-05:00 axis-accc8ef7de6b [ NOTICE  ] syslog-ng[696]: Configuration reload finished;
+2020-10-09T22:00:09.812-05:00 axis-accc8ef7de6b [ NOTICE  ] syslog-ng[696]: Configuration reload request received, reloading configuration;
+2020-10-09T22:00:09.817-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: Started Rotate log files.
+2020-10-09T22:00:09.817-05:00 axis-accc8ef7de6b [ INFO    ] systemd[1]: logrotate.service: Succeeded.
+2020-10-09T22:00:09.817-05:00 axis-accc8ef7de6b [ NOTICE  ] systemd[1]: logrotate.service: Consumed 1.337s CPU time.
+2020-10-09T22:03:52.142-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T22:03:54.181-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T22:05:53.073-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T22:05:53.096-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T22:05:53.245-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T22:05:53.355-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T22:05:56.356-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T22:05:56.411-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T22:06:16.901-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T22:06:49.495-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T22:08:54.788-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T22:08:56.847-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T22:11:38.916-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T22:11:38.916-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T22:11:39.192-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T22:11:39.242-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T22:11:42.344-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T22:11:42.361-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T22:12:03.054-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T22:12:36.955-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".
+2020-10-09T22:13:56.785-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: sending renew to 172.16.4.1
+2020-10-09T22:13:58.854-05:00 axis-accc8ef7de6b [ INFO    ] udhcpc[535]: udhcpc: lease of 172.16.4.30 obtained, lease time 600
+2020-10-09T22:14:05.270-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is starting action "Record Video"
+2020-10-09T22:14:05.270-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is starting action "Record Video"
+2020-10-09T22:14:05.564-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SMB)".
+2020-10-09T22:14:05.603-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Started saving stream for event "Record motion (SD)".
+2020-10-09T22:14:08.710-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SD)" is stopping action "Record Video"
+2020-10-09T22:14:08.710-05:00 axis-accc8ef7de6b [ NOTICE  ] actionengined-user[990]: Action rule "Record motion (SMB)" is stopping action "Record Video"
+2020-10-09T22:14:29.421-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SD)".
+2020-10-09T22:15:01.172-05:00 axis-accc8ef7de6b [ INFO    ] monolith[505]: Stopped saving stream for event "Record motion (SMB)".

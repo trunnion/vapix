@@ -1,0 +1,708 @@
+
+----- /var/log/messages.old -----
+
+<INFO    > Oct 10 00:10:43 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.59.162
+<INFO    > Oct 10 00:10:44 axis-00408cfb6888 libupnp[23535]: UPnP Initialized(172.16.3.233:49156)
+<INFO    > Oct 10 00:10:44 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:10:45 axis-00408cfb6888 syslogd[23250]: exiting on signal 15
+<INFO    > Oct 10 00:10:45 axis-00408cfb6888 syslogd[23584]: 1.4.1: restart.
+<INFO    > Oct 10 00:10:46 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.59.162 from eth0.
+<INFO    > Oct 10 00:10:47 axis-00408cfb6888 libupnp[23535]: Exiting...
+<INFO    > Oct 10 00:10:47 axis-00408cfb6888 libupnp[23673]: UPnP Initialized(172.16.3.233:49157)
+<INFO    > Oct 10 00:10:52 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.213.222
+<INFO    > Oct 10 00:10:52 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.213.222.
+<INFO    > Oct 10 00:10:52 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.213.222
+<INFO    > Oct 10 00:10:53 axis-00408cfb6888 libupnp[23673]: Exiting...
+<INFO    > Oct 10 00:10:54 axis-00408cfb6888 libupnp[23863]: UPnP Initialized(172.16.3.233:49158)
+<INFO    > Oct 10 00:10:54 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:10:55 axis-00408cfb6888 syslogd[23584]: exiting on signal 15
+<INFO    > Oct 10 00:10:55 axis-00408cfb6888 syslogd[23908]: 1.4.1: restart.
+<INFO    > Oct 10 00:10:56 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.213.222 from eth0.
+<INFO    > Oct 10 00:10:56 axis-00408cfb6888 libupnp[23863]: Exiting...
+<INFO    > Oct 10 00:10:57 axis-00408cfb6888 libupnp[23997]: UPnP Initialized(172.16.3.233:49158)
+<INFO    > Oct 10 00:11:01 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.180.229
+<INFO    > Oct 10 00:11:01 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.180.229.
+<INFO    > Oct 10 00:11:02 axis-00408cfb6888 libupnp[23997]: Exiting...
+<INFO    > Oct 10 00:11:02 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.180.229
+<INFO    > Oct 10 00:11:03 axis-00408cfb6888 libupnp[24173]: UPnP Initialized(172.16.3.233:49153)
+<INFO    > Oct 10 00:11:03 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:11:04 axis-00408cfb6888 syslogd[23908]: exiting on signal 15
+<INFO    > Oct 10 00:11:04 axis-00408cfb6888 syslogd[24234]: 1.4.1: restart.
+<INFO    > Oct 10 00:11:05 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.180.229 from eth0.
+<INFO    > Oct 10 00:11:06 axis-00408cfb6888 libupnp[24173]: Exiting...
+<INFO    > Oct 10 00:11:06 axis-00408cfb6888 libupnp[24323]: UPnP Initialized(172.16.3.233:49155)
+<INFO    > Oct 10 00:11:11 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.73.72
+<INFO    > Oct 10 00:11:12 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.73.72.
+<INFO    > Oct 10 00:11:12 axis-00408cfb6888 libupnp[24323]: Exiting...
+<INFO    > Oct 10 00:11:13 axis-00408cfb6888 libupnp[24501]: UPnP Initialized(172.16.3.233:49159)
+<INFO    > Oct 10 00:11:13 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.73.72
+<INFO    > Oct 10 00:11:13 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:11:14 axis-00408cfb6888 syslogd[24234]: exiting on signal 15
+<INFO    > Oct 10 00:11:15 axis-00408cfb6888 syslogd[24560]: 1.4.1: restart.
+<INFO    > Oct 10 00:11:15 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.73.72 from eth0.
+<INFO    > Oct 10 00:11:16 axis-00408cfb6888 libupnp[24501]: Exiting...
+<INFO    > Oct 10 00:11:16 axis-00408cfb6888 libupnp[24649]: UPnP Initialized(172.16.3.233:49160)
+<INFO    > Oct 10 00:11:21 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.147.77
+<INFO    > Oct 10 00:11:22 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.147.77.
+<INFO    > Oct 10 00:11:22 axis-00408cfb6888 libupnp[24649]: Exiting...
+<INFO    > Oct 10 00:11:23 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.147.77
+<INFO    > Oct 10 00:11:23 axis-00408cfb6888 libupnp[24851]: UPnP Initialized(172.16.3.233:49161)
+<INFO    > Oct 10 00:11:23 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:11:25 axis-00408cfb6888 syslogd[24560]: exiting on signal 15
+<INFO    > Oct 10 00:11:25 axis-00408cfb6888 syslogd[24896]: 1.4.1: restart.
+<INFO    > Oct 10 00:11:26 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.147.77 from eth0.
+<INFO    > Oct 10 00:11:26 axis-00408cfb6888 libupnp[24851]: Exiting...
+<INFO    > Oct 10 00:11:27 axis-00408cfb6888 libupnp[24985]: UPnP Initialized(172.16.3.233:49162)
+<INFO    > Oct 10 00:11:31 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.235.181
+<INFO    > Oct 10 00:11:32 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.235.181.
+<INFO    > Oct 10 00:11:32 axis-00408cfb6888 libupnp[24985]: Exiting...
+<INFO    > Oct 10 00:11:33 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.235.181
+<INFO    > Oct 10 00:11:33 axis-00408cfb6888 libupnp[25166]: UPnP Initialized(172.16.3.233:49154)
+<INFO    > Oct 10 00:11:33 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:11:35 axis-00408cfb6888 syslogd[24896]: exiting on signal 15
+<INFO    > Oct 10 00:11:35 axis-00408cfb6888 syslogd[25222]: 1.4.1: restart.
+<INFO    > Oct 10 00:11:35 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.235.181 from eth0.
+<INFO    > Oct 10 00:11:36 axis-00408cfb6888 libupnp[25166]: Exiting...
+<INFO    > Oct 10 00:11:36 axis-00408cfb6888 libupnp[25311]: UPnP Initialized(172.16.3.233:49152)
+<INFO    > Oct 10 00:11:41 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.251.110
+<INFO    > Oct 10 00:11:42 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.251.110.
+<INFO    > Oct 10 00:11:42 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.251.110
+<INFO    > Oct 10 00:11:43 axis-00408cfb6888 libupnp[25311]: Exiting...
+<INFO    > Oct 10 00:11:43 axis-00408cfb6888 libupnp[25511]: UPnP Initialized(172.16.3.233:49156)
+<INFO    > Oct 10 00:11:43 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:11:45 axis-00408cfb6888 syslogd[25222]: exiting on signal 15
+<INFO    > Oct 10 00:11:45 axis-00408cfb6888 syslogd[25556]: 1.4.1: restart.
+<INFO    > Oct 10 00:11:46 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.251.110 from eth0.
+<INFO    > Oct 10 00:11:46 axis-00408cfb6888 libupnp[25511]: Exiting...
+<INFO    > Oct 10 00:11:47 axis-00408cfb6888 libupnp[25645]: UPnP Initialized(172.16.3.233:49156)
+<INFO    > Oct 10 00:11:51 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.62.6
+<INFO    > Oct 10 00:11:51 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.62.6.
+<INFO    > Oct 10 00:11:52 axis-00408cfb6888 libupnp[25645]: Exiting...
+<INFO    > Oct 10 00:11:52 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.62.6
+<INFO    > Oct 10 00:11:53 axis-00408cfb6888 libupnp[25827]: UPnP Initialized(172.16.3.233:49157)
+<INFO    > Oct 10 00:11:53 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:11:54 axis-00408cfb6888 syslogd[25556]: exiting on signal 15
+<INFO    > Oct 10 00:11:54 axis-00408cfb6888 syslogd[25873]: 1.4.1: restart.
+<INFO    > Oct 10 00:11:55 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.62.6 from eth0.
+<INFO    > Oct 10 00:11:55 axis-00408cfb6888 libupnp[25827]: Exiting...
+<INFO    > Oct 10 00:11:56 axis-00408cfb6888 libupnp[25961]: UPnP Initialized(172.16.3.233:49158)
+<INFO    > Oct 10 00:12:01 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.220.189
+<INFO    > Oct 10 00:12:01 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.220.189.
+<INFO    > Oct 10 00:12:02 axis-00408cfb6888 libupnp[25961]: Exiting...
+<INFO    > Oct 10 00:12:02 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.220.189
+<INFO    > Oct 10 00:12:02 axis-00408cfb6888 libupnp[26139]: UPnP Initialized(172.16.3.233:49163)
+<INFO    > Oct 10 00:12:02 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:12:04 axis-00408cfb6888 syslogd[25873]: exiting on signal 15
+<INFO    > Oct 10 00:12:04 axis-00408cfb6888 syslogd[26198]: 1.4.1: restart.
+<INFO    > Oct 10 00:12:05 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.220.189 from eth0.
+<INFO    > Oct 10 00:12:05 axis-00408cfb6888 libupnp[26139]: Exiting...
+<INFO    > Oct 10 00:12:06 axis-00408cfb6888 libupnp[26287]: UPnP Initialized(172.16.3.233:49153)
+<INFO    > Oct 10 00:12:11 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.205.69
+<INFO    > Oct 10 00:12:11 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.205.69.
+<INFO    > Oct 10 00:12:12 axis-00408cfb6888 libupnp[26287]: Exiting...
+<INFO    > Oct 10 00:12:12 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.205.69
+<INFO    > Oct 10 00:12:13 axis-00408cfb6888 libupnp[26481]: UPnP Initialized(172.16.3.233:49155)
+<INFO    > Oct 10 00:12:13 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:12:14 axis-00408cfb6888 syslogd[26198]: exiting on signal 15
+<INFO    > Oct 10 00:12:14 axis-00408cfb6888 syslogd[26534]: 1.4.1: restart.
+<INFO    > Oct 10 00:12:15 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.205.69 from eth0.
+<INFO    > Oct 10 00:12:15 axis-00408cfb6888 libupnp[26481]: Exiting...
+<INFO    > Oct 10 00:12:16 axis-00408cfb6888 libupnp[26619]: UPnP Initialized(172.16.3.233:49159)
+<INFO    > Oct 10 00:12:21 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.100.58
+<INFO    > Oct 10 00:12:21 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.100.58.
+<INFO    > Oct 10 00:12:22 axis-00408cfb6888 libupnp[26619]: Exiting...
+<INFO    > Oct 10 00:12:22 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.100.58
+<INFO    > Oct 10 00:12:23 axis-00408cfb6888 libupnp[26815]: UPnP Initialized(172.16.3.233:49160)
+<INFO    > Oct 10 00:12:23 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:12:24 axis-00408cfb6888 syslogd[26534]: exiting on signal 15
+<INFO    > Oct 10 00:12:24 axis-00408cfb6888 syslogd[26860]: 1.4.1: restart.
+<INFO    > Oct 10 00:12:25 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.100.58 from eth0.
+<INFO    > Oct 10 00:12:25 axis-00408cfb6888 libupnp[26815]: Exiting...
+<INFO    > Oct 10 00:12:26 axis-00408cfb6888 libupnp[26949]: UPnP Initialized(172.16.3.233:49161)
+<INFO    > Oct 10 00:12:31 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.113.238
+<INFO    > Oct 10 00:12:31 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.113.238.
+<INFO    > Oct 10 00:12:32 axis-00408cfb6888 libupnp[26949]: Exiting...
+<INFO    > Oct 10 00:12:32 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.113.238
+<INFO    > Oct 10 00:12:33 axis-00408cfb6888 libupnp[27136]: UPnP Initialized(172.16.3.233:49154)
+<INFO    > Oct 10 00:12:33 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:12:34 axis-00408cfb6888 syslogd[26860]: exiting on signal 15
+<INFO    > Oct 10 00:12:34 axis-00408cfb6888 syslogd[27225]: 1.4.1: restart.
+<INFO    > Oct 10 00:12:35 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.113.238 from eth0.
+<INFO    > Oct 10 00:12:36 axis-00408cfb6888 libupnp[27136]: Exiting...
+<INFO    > Oct 10 00:12:36 axis-00408cfb6888 libupnp[27314]: UPnP Initialized(172.16.3.233:49152)
+<INFO    > Oct 10 00:12:41 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.219.226
+<INFO    > Oct 10 00:12:41 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.219.226.
+<INFO    > Oct 10 00:12:42 axis-00408cfb6888 libupnp[27314]: Exiting...
+<INFO    > Oct 10 00:12:42 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.219.226
+<INFO    > Oct 10 00:12:43 axis-00408cfb6888 libupnp[27506]: UPnP Initialized(172.16.3.233:49156)
+<INFO    > Oct 10 00:12:43 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:12:44 axis-00408cfb6888 syslogd[27225]: exiting on signal 15
+<INFO    > Oct 10 00:12:44 axis-00408cfb6888 syslogd[27551]: 1.4.1: restart.
+<INFO    > Oct 10 00:12:45 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.219.226 from eth0.
+<INFO    > Oct 10 00:12:45 axis-00408cfb6888 libupnp[27506]: Exiting...
+<INFO    > Oct 10 00:12:46 axis-00408cfb6888 libupnp[27640]: UPnP Initialized(172.16.3.233:49156)
+<INFO    > Oct 10 00:12:50 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.226.198
+<INFO    > Oct 10 00:12:51 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.226.198.
+<INFO    > Oct 10 00:12:52 axis-00408cfb6888 libupnp[27640]: Exiting...
+<INFO    > Oct 10 00:12:52 axis-00408cfb6888 libupnp[27818]: UPnP Initialized(172.16.3.233:49157)
+<INFO    > Oct 10 00:12:52 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:12:53 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.226.198
+<INFO    > Oct 10 00:12:54 axis-00408cfb6888 syslogd[27551]: exiting on signal 15
+<INFO    > Oct 10 00:12:54 axis-00408cfb6888 syslogd[27873]: 1.4.1: restart.
+<INFO    > Oct 10 00:12:55 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.226.198 from eth0.
+<INFO    > Oct 10 00:12:55 axis-00408cfb6888 libupnp[27818]: Exiting...
+<INFO    > Oct 10 00:12:56 axis-00408cfb6888 libupnp[27957]: UPnP Initialized(172.16.3.233:49162)
+<INFO    > Oct 10 00:13:01 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.176.147
+<INFO    > Oct 10 00:13:01 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.176.147.
+<INFO    > Oct 10 00:13:02 axis-00408cfb6888 libupnp[27957]: Exiting...
+<INFO    > Oct 10 00:13:02 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.176.147
+<INFO    > Oct 10 00:13:03 axis-00408cfb6888 libupnp[28168]: UPnP Initialized(172.16.3.233:49158)
+<INFO    > Oct 10 00:13:03 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:13:04 axis-00408cfb6888 syslogd[27873]: exiting on signal 15
+<INFO    > Oct 10 00:13:05 axis-00408cfb6888 syslogd[28213]: 1.4.1: restart.
+<INFO    > Oct 10 00:13:05 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.176.147 from eth0.
+<INFO    > Oct 10 00:13:06 axis-00408cfb6888 libupnp[28168]: Exiting...
+<INFO    > Oct 10 00:13:06 axis-00408cfb6888 libupnp[28302]: UPnP Initialized(172.16.3.233:49153)
+<INFO    > Oct 10 00:13:11 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.206.25
+<INFO    > Oct 10 00:13:11 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.206.25.
+<INFO    > Oct 10 00:13:12 axis-00408cfb6888 libupnp[28302]: Exiting...
+<INFO    > Oct 10 00:13:13 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.206.25
+<INFO    > Oct 10 00:13:13 axis-00408cfb6888 libupnp[28480]: UPnP Initialized(172.16.3.233:49155)
+<INFO    > Oct 10 00:13:13 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:13:14 axis-00408cfb6888 syslogd[28213]: exiting on signal 15
+<INFO    > Oct 10 00:13:14 axis-00408cfb6888 syslogd[28539]: 1.4.1: restart.
+<INFO    > Oct 10 00:13:15 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.206.25 from eth0.
+<INFO    > Oct 10 00:13:16 axis-00408cfb6888 libupnp[28480]: Exiting...
+<INFO    > Oct 10 00:13:16 axis-00408cfb6888 libupnp[28628]: UPnP Initialized(172.16.3.233:49159)
+<INFO    > Oct 10 00:13:21 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.187.210
+<INFO    > Oct 10 00:13:22 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.187.210.
+<INFO    > Oct 10 00:13:22 axis-00408cfb6888 libupnp[28628]: Exiting...
+<INFO    > Oct 10 00:13:22 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.187.210
+<INFO    > Oct 10 00:13:23 axis-00408cfb6888 libupnp[28828]: UPnP Initialized(172.16.3.233:49160)
+<INFO    > Oct 10 00:13:23 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:13:25 axis-00408cfb6888 syslogd[28539]: exiting on signal 15
+<INFO    > Oct 10 00:13:25 axis-00408cfb6888 syslogd[28875]: 1.4.1: restart.
+<INFO    > Oct 10 00:13:26 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.187.210 from eth0.
+<INFO    > Oct 10 00:13:26 axis-00408cfb6888 libupnp[28828]: Exiting...
+<INFO    > Oct 10 00:13:27 axis-00408cfb6888 libupnp[28963]: UPnP Initialized(172.16.3.233:49163)
+<INFO    > Oct 10 00:13:31 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.16.53
+<INFO    > Oct 10 00:13:32 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.16.53.
+<INFO    > Oct 10 00:13:32 axis-00408cfb6888 libupnp[28963]: Exiting...
+<INFO    > Oct 10 00:13:33 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.16.53
+<INFO    > Oct 10 00:13:33 axis-00408cfb6888 libupnp[29140]: UPnP Initialized(172.16.3.233:49161)
+<INFO    > Oct 10 00:13:33 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:13:34 axis-00408cfb6888 syslogd[28875]: exiting on signal 15
+<INFO    > Oct 10 00:13:34 axis-00408cfb6888 syslogd[29201]: 1.4.1: restart.
+<INFO    > Oct 10 00:13:35 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.16.53 from eth0.
+<INFO    > Oct 10 00:13:36 axis-00408cfb6888 libupnp[29140]: Exiting...
+<INFO    > Oct 10 00:13:36 axis-00408cfb6888 libupnp[29290]: UPnP Initialized(172.16.3.233:49152)
+<INFO    > Oct 10 00:13:41 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.192.67
+<INFO    > Oct 10 00:13:42 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.192.67.
+<INFO    > Oct 10 00:13:42 axis-00408cfb6888 libupnp[29290]: Exiting...
+<INFO    > Oct 10 00:13:42 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.192.67
+<INFO    > Oct 10 00:13:43 axis-00408cfb6888 libupnp[29492]: UPnP Initialized(172.16.3.233:49154)
+<INFO    > Oct 10 00:13:43 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:13:45 axis-00408cfb6888 syslogd[29201]: exiting on signal 15
+<INFO    > Oct 10 00:13:45 axis-00408cfb6888 syslogd[29537]: 1.4.1: restart.
+<INFO    > Oct 10 00:13:46 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.192.67 from eth0.
+<INFO    > Oct 10 00:13:46 axis-00408cfb6888 libupnp[29492]: Exiting...
+<INFO    > Oct 10 00:13:47 axis-00408cfb6888 libupnp[29626]: UPnP Initialized(172.16.3.233:49156)
+<INFO    > Oct 10 00:13:51 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.55.68
+<INFO    > Oct 10 00:13:52 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.55.68.
+<INFO    > Oct 10 00:13:52 axis-00408cfb6888 libupnp[29626]: Exiting...
+<INFO    > Oct 10 00:13:53 axis-00408cfb6888 libupnp[29802]: UPnP Initialized(172.16.3.233:49157)
+<INFO    > Oct 10 00:13:53 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.55.68
+<INFO    > Oct 10 00:13:53 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:13:54 axis-00408cfb6888 syslogd[29537]: exiting on signal 15
+<INFO    > Oct 10 00:13:55 axis-00408cfb6888 syslogd[29862]: 1.4.1: restart.
+<INFO    > Oct 10 00:13:55 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.55.68 from eth0.
+<INFO    > Oct 10 00:13:56 axis-00408cfb6888 libupnp[29802]: Exiting...
+<INFO    > Oct 10 00:13:56 axis-00408cfb6888 libupnp[29942]: UPnP Initialized(172.16.3.233:49162)
+<INFO    > Oct 10 00:14:01 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.254.38
+<INFO    > Oct 10 00:14:02 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.254.38.
+<INFO    > Oct 10 00:14:02 axis-00408cfb6888 libupnp[29942]: Exiting...
+<INFO    > Oct 10 00:14:02 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.254.38
+<INFO    > Oct 10 00:14:03 axis-00408cfb6888 libupnp[30142]: UPnP Initialized(172.16.3.233:49158)
+<INFO    > Oct 10 00:14:03 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:14:05 axis-00408cfb6888 syslogd[29862]: exiting on signal 15
+<INFO    > Oct 10 00:14:05 axis-00408cfb6888 syslogd[30187]: 1.4.1: restart.
+<INFO    > Oct 10 00:14:06 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.254.38 from eth0.
+<INFO    > Oct 10 00:14:06 axis-00408cfb6888 libupnp[30142]: Exiting...
+<INFO    > Oct 10 00:14:07 axis-00408cfb6888 libupnp[30276]: UPnP Initialized(172.16.3.233:49153)
+<INFO    > Oct 10 00:14:11 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.50.184
+<INFO    > Oct 10 00:14:11 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.50.184.
+<INFO    > Oct 10 00:14:12 axis-00408cfb6888 libupnp[30276]: Exiting...
+<INFO    > Oct 10 00:14:13 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.50.184
+<INFO    > Oct 10 00:14:13 axis-00408cfb6888 libupnp[30452]: UPnP Initialized(172.16.3.233:49155)
+<INFO    > Oct 10 00:14:13 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:14:14 axis-00408cfb6888 syslogd[30187]: exiting on signal 15
+<INFO    > Oct 10 00:14:14 axis-00408cfb6888 syslogd[30513]: 1.4.1: restart.
+<INFO    > Oct 10 00:14:15 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.50.184 from eth0.
+<INFO    > Oct 10 00:14:16 axis-00408cfb6888 libupnp[30452]: Exiting...
+<INFO    > Oct 10 00:14:16 axis-00408cfb6888 libupnp[30602]: UPnP Initialized(172.16.3.233:49159)
+<INFO    > Oct 10 00:14:21 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.30.189
+<INFO    > Oct 10 00:14:22 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.30.189.
+<INFO    > Oct 10 00:14:22 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.30.189
+<INFO    > Oct 10 00:14:22 axis-00408cfb6888 libupnp[30602]: Exiting...
+<INFO    > Oct 10 00:14:23 axis-00408cfb6888 libupnp[30802]: UPnP Initialized(172.16.3.233:49160)
+<INFO    > Oct 10 00:14:23 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:14:24 axis-00408cfb6888 syslogd[30513]: exiting on signal 15
+<INFO    > Oct 10 00:14:25 axis-00408cfb6888 syslogd[30847]: 1.4.1: restart.
+<INFO    > Oct 10 00:14:25 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.30.189 from eth0.
+<INFO    > Oct 10 00:14:26 axis-00408cfb6888 libupnp[30802]: Exiting...
+<INFO    > Oct 10 00:14:26 axis-00408cfb6888 libupnp[30936]: UPnP Initialized(172.16.3.233:49164)
+<INFO    > Oct 10 00:14:30 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.153.202
+<INFO    > Oct 10 00:14:31 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.153.202.
+<INFO    > Oct 10 00:14:31 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.153.202
+<INFO    > Oct 10 00:14:31 axis-00408cfb6888 libupnp[30936]: Exiting...
+<INFO    > Oct 10 00:14:32 axis-00408cfb6888 libupnp[31118]: UPnP Initialized(172.16.3.233:49163)
+<INFO    > Oct 10 00:14:32 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:14:34 axis-00408cfb6888 syslogd[30847]: exiting on signal 15
+<INFO    > Oct 10 00:14:34 axis-00408cfb6888 syslogd[31171]: 1.4.1: restart.
+<INFO    > Oct 10 00:14:35 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.153.202 from eth0.
+<INFO    > Oct 10 00:14:35 axis-00408cfb6888 libupnp[31118]: Exiting...
+<INFO    > Oct 10 00:14:36 axis-00408cfb6888 libupnp[31258]: UPnP Initialized(172.16.3.233:49152)
+<INFO    > Oct 10 00:14:40 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.59.18
+<INFO    > Oct 10 00:14:40 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.59.18.
+<INFO    > Oct 10 00:14:41 axis-00408cfb6888 libupnp[31258]: Exiting...
+<INFO    > Oct 10 00:14:41 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.59.18
+<INFO    > Oct 10 00:14:42 axis-00408cfb6888 libupnp[31443]: UPnP Initialized(172.16.3.233:49161)
+<INFO    > Oct 10 00:14:42 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:14:43 axis-00408cfb6888 syslogd[31171]: exiting on signal 15
+<INFO    > Oct 10 00:14:44 axis-00408cfb6888 syslogd[31495]: 1.4.1: restart.
+<INFO    > Oct 10 00:14:44 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.59.18 from eth0.
+<INFO    > Oct 10 00:14:45 axis-00408cfb6888 libupnp[31443]: Exiting...
+<INFO    > Oct 10 00:14:45 axis-00408cfb6888 libupnp[31577]: UPnP Initialized(172.16.3.233:49154)
+<INFO    > Oct 10 00:14:50 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.198.228
+<INFO    > Oct 10 00:14:50 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.198.228.
+<INFO    > Oct 10 00:14:51 axis-00408cfb6888 libupnp[31577]: Exiting...
+<INFO    > Oct 10 00:14:51 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.198.228
+<INFO    > Oct 10 00:14:52 axis-00408cfb6888 libupnp[31766]: UPnP Initialized(172.16.3.233:49156)
+<INFO    > Oct 10 00:14:52 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:14:53 axis-00408cfb6888 syslogd[31495]: exiting on signal 15
+<INFO    > Oct 10 00:14:53 axis-00408cfb6888 syslogd[31813]: 1.4.1: restart.
+<INFO    > Oct 10 00:14:54 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.198.228 from eth0.
+<INFO    > Oct 10 00:14:55 axis-00408cfb6888 libupnp[31766]: Exiting...
+<INFO    > Oct 10 00:14:55 axis-00408cfb6888 libupnp[31902]: UPnP Initialized(172.16.3.233:49157)
+<INFO    > Oct 10 00:14:59 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.63.107
+<INFO    > Oct 10 00:15:00 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.63.107.
+<INFO    > Oct 10 00:15:00 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.63.107
+<INFO    > Oct 10 00:15:01 axis-00408cfb6888 libupnp[31902]: Exiting...
+<INFO    > Oct 10 00:15:01 axis-00408cfb6888 libupnp[32092]: UPnP Initialized(172.16.3.233:49158)
+<INFO    > Oct 10 00:15:01 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:15:03 axis-00408cfb6888 syslogd[31813]: exiting on signal 15
+<INFO    > Oct 10 00:15:03 axis-00408cfb6888 syslogd[32137]: 1.4.1: restart.
+<INFO    > Oct 10 00:15:04 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.63.107 from eth0.
+<INFO    > Oct 10 00:15:04 axis-00408cfb6888 libupnp[32092]: Exiting...
+<INFO    > Oct 10 00:15:04 axis-00408cfb6888 libupnp[32226]: UPnP Initialized(172.16.3.233:49162)
+<INFO    > Oct 10 00:15:09 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.50.225
+<INFO    > Oct 10 00:15:09 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.50.225.
+<WARNING > Oct 10 00:15:09 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (15) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:15:10 axis-00408cfb6888 libupnp[32226]: Exiting...
+<INFO    > Oct 10 00:15:10 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.50.225
+<INFO    > Oct 10 00:15:11 axis-00408cfb6888 libupnp[32416]: UPnP Initialized(172.16.3.233:49153)
+<INFO    > Oct 10 00:15:11 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:15:12 axis-00408cfb6888 syslogd[32137]: exiting on signal 15
+<INFO    > Oct 10 00:15:12 axis-00408cfb6888 syslogd[32463]: 1.4.1: restart.
+<INFO    > Oct 10 00:15:13 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.50.225 from eth0.
+<INFO    > Oct 10 00:15:13 axis-00408cfb6888 libupnp[32416]: Exiting...
+<INFO    > Oct 10 00:15:14 axis-00408cfb6888 libupnp[32550]: UPnP Initialized(172.16.3.233:49155)
+<WARNING > Oct 10 00:15:16 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (16) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:15:19 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.202.181
+<INFO    > Oct 10 00:15:19 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.202.181.
+<INFO    > Oct 10 00:15:20 axis-00408cfb6888 libupnp[32550]: Exiting...
+<INFO    > Oct 10 00:15:20 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.202.181
+<INFO    > Oct 10 00:15:21 axis-00408cfb6888 libupnp[32740]: UPnP Initialized(172.16.3.233:49159)
+<INFO    > Oct 10 00:15:21 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:15:22 axis-00408cfb6888 syslogd[32463]: exiting on signal 15
+<INFO    > Oct 10 00:15:22 axis-00408cfb6888 syslogd[321]: 1.4.1: restart.
+<INFO    > Oct 10 00:15:23 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.202.181 from eth0.
+<INFO    > Oct 10 00:15:23 axis-00408cfb6888 libupnp[32740]: Exiting...
+<INFO    > Oct 10 00:15:24 axis-00408cfb6888 libupnp[410]: UPnP Initialized(172.16.3.233:49159)
+<INFO    > Oct 10 00:15:29 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.64.122
+<INFO    > Oct 10 00:15:29 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.64.122.
+<INFO    > Oct 10 00:15:30 axis-00408cfb6888 libupnp[410]: Exiting...
+<INFO    > Oct 10 00:15:30 axis-00408cfb6888 libupnp[603]: UPnP Initialized(172.16.3.233:49160)
+<INFO    > Oct 10 00:15:30 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.64.122
+<INFO    > Oct 10 00:15:31 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:15:32 axis-00408cfb6888 syslogd[321]: exiting on signal 15
+<INFO    > Oct 10 00:15:32 axis-00408cfb6888 syslogd[672]: 1.4.1: restart.
+<INFO    > Oct 10 00:15:33 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.64.122 from eth0.
+<INFO    > Oct 10 00:15:34 axis-00408cfb6888 libupnp[603]: Exiting...
+<INFO    > Oct 10 00:15:34 axis-00408cfb6888 libupnp[762]: UPnP Initialized(172.16.3.233:49163)
+<INFO    > Oct 10 00:15:39 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.104.131
+<INFO    > Oct 10 00:15:40 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.104.131.
+<INFO    > Oct 10 00:15:40 axis-00408cfb6888 libupnp[762]: Exiting...
+<INFO    > Oct 10 00:15:40 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.104.131
+<INFO    > Oct 10 00:15:41 axis-00408cfb6888 libupnp[1000]: UPnP Initialized(172.16.3.233:49152)
+<INFO    > Oct 10 00:15:41 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:15:43 axis-00408cfb6888 syslogd[672]: exiting on signal 15
+<INFO    > Oct 10 00:15:43 axis-00408cfb6888 syslogd[1047]: 1.4.1: restart.
+<INFO    > Oct 10 00:15:44 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.104.131 from eth0.
+<INFO    > Oct 10 00:15:44 axis-00408cfb6888 libupnp[1000]: Exiting...
+<INFO    > Oct 10 00:15:45 axis-00408cfb6888 libupnp[1143]: UPnP Initialized(172.16.3.233:49154)
+<INFO    > Oct 10 00:15:49 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.113.225
+<INFO    > Oct 10 00:15:50 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.113.225.
+<INFO    > Oct 10 00:15:50 axis-00408cfb6888 libupnp[1143]: Exiting...
+<INFO    > Oct 10 00:15:50 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.113.225
+<INFO    > Oct 10 00:15:51 axis-00408cfb6888 libupnp[1345]: UPnP Initialized(172.16.3.233:49156)
+<INFO    > Oct 10 00:15:51 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:15:52 axis-00408cfb6888 syslogd[1047]: exiting on signal 15
+<INFO    > Oct 10 00:15:52 axis-00408cfb6888 syslogd[1396]: 1.4.1: restart.
+<INFO    > Oct 10 00:15:53 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.113.225 from eth0.
+<INFO    > Oct 10 00:15:54 axis-00408cfb6888 libupnp[1345]: Exiting...
+<INFO    > Oct 10 00:15:54 axis-00408cfb6888 libupnp[1490]: UPnP Initialized(172.16.3.233:49161)
+<INFO    > Oct 10 00:15:59 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.22.127
+<INFO    > Oct 10 00:15:59 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.22.127.
+<INFO    > Oct 10 00:16:00 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.22.127
+<INFO    > Oct 10 00:16:00 axis-00408cfb6888 libupnp[1490]: Exiting...
+<INFO    > Oct 10 00:16:01 axis-00408cfb6888 libupnp[1689]: UPnP Initialized(172.16.3.233:49157)
+<INFO    > Oct 10 00:16:01 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:16:02 axis-00408cfb6888 syslogd[1396]: exiting on signal 15
+<INFO    > Oct 10 00:16:02 axis-00408cfb6888 syslogd[1734]: 1.4.1: restart.
+<INFO    > Oct 10 00:16:03 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.22.127 from eth0.
+<INFO    > Oct 10 00:16:03 axis-00408cfb6888 libupnp[1689]: Exiting...
+<INFO    > Oct 10 00:16:04 axis-00408cfb6888 libupnp[1825]: UPnP Initialized(172.16.3.233:49158)
+<INFO    > Oct 10 00:16:08 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.162.6
+<INFO    > Oct 10 00:16:09 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.162.6.
+<INFO    > Oct 10 00:16:09 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.162.6
+<INFO    > Oct 10 00:16:09 axis-00408cfb6888 libupnp[1825]: Exiting...
+<INFO    > Oct 10 00:16:10 axis-00408cfb6888 libupnp[2036]: UPnP Initialized(172.16.3.233:49153)
+<INFO    > Oct 10 00:16:10 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:16:12 axis-00408cfb6888 syslogd[1734]: exiting on signal 15
+<INFO    > Oct 10 00:16:12 axis-00408cfb6888 syslogd[2082]: 1.4.1: restart.
+<INFO    > Oct 10 00:16:12 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.162.6 from eth0.
+<INFO    > Oct 10 00:16:13 axis-00408cfb6888 libupnp[2036]: Exiting...
+<INFO    > Oct 10 00:16:13 axis-00408cfb6888 libupnp[2171]: UPnP Initialized(172.16.3.233:49155)
+<INFO    > Oct 10 00:16:18 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.45.240
+<INFO    > Oct 10 00:16:18 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.45.240.
+<INFO    > Oct 10 00:16:19 axis-00408cfb6888 libupnp[2171]: Exiting...
+<INFO    > Oct 10 00:16:19 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.45.240
+<INFO    > Oct 10 00:16:20 axis-00408cfb6888 libupnp[2355]: UPnP Initialized(172.16.3.233:49162)
+<INFO    > Oct 10 00:16:20 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:16:21 axis-00408cfb6888 syslogd[2082]: exiting on signal 15
+<INFO    > Oct 10 00:16:21 axis-00408cfb6888 syslogd[2407]: 1.4.1: restart.
+<INFO    > Oct 10 00:16:22 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.45.240 from eth0.
+<INFO    > Oct 10 00:16:22 axis-00408cfb6888 libupnp[2355]: Exiting...
+<INFO    > Oct 10 00:16:23 axis-00408cfb6888 libupnp[2492]: UPnP Initialized(172.16.3.233:49159)
+<INFO    > Oct 10 00:16:27 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.14.234
+<INFO    > Oct 10 00:16:28 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.14.234.
+<INFO    > Oct 10 00:16:28 axis-00408cfb6888 libupnp[2492]: Exiting...
+<INFO    > Oct 10 00:16:29 axis-00408cfb6888 libupnp[2666]: UPnP Initialized(172.16.3.233:49160)
+<INFO    > Oct 10 00:16:29 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.14.234
+<INFO    > Oct 10 00:16:29 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:16:31 axis-00408cfb6888 syslogd[2407]: exiting on signal 15
+<INFO    > Oct 10 00:16:31 axis-00408cfb6888 syslogd[2726]: 1.4.1: restart.
+<INFO    > Oct 10 00:16:32 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.14.234 from eth0.
+<INFO    > Oct 10 00:16:32 axis-00408cfb6888 libupnp[2666]: Exiting...
+<INFO    > Oct 10 00:16:33 axis-00408cfb6888 libupnp[2815]: UPnP Initialized(172.16.3.233:49164)
+<INFO    > Oct 10 00:16:38 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.157.114
+<INFO    > Oct 10 00:16:38 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.157.114.
+<INFO    > Oct 10 00:16:39 axis-00408cfb6888 libupnp[2815]: Exiting...
+<INFO    > Oct 10 00:16:39 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.157.114
+<INFO    > Oct 10 00:16:40 axis-00408cfb6888 libupnp[3014]: UPnP Initialized(172.16.3.233:49163)
+<INFO    > Oct 10 00:16:40 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:16:41 axis-00408cfb6888 syslogd[2726]: exiting on signal 15
+<INFO    > Oct 10 00:16:41 axis-00408cfb6888 syslogd[3059]: 1.4.1: restart.
+<INFO    > Oct 10 00:16:42 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.157.114 from eth0.
+<INFO    > Oct 10 00:16:42 axis-00408cfb6888 libupnp[3014]: Exiting...
+<INFO    > Oct 10 00:16:43 axis-00408cfb6888 libupnp[3148]: UPnP Initialized(172.16.3.233:49152)
+<INFO    > Oct 10 00:16:48 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.126.167
+<INFO    > Oct 10 00:16:48 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.126.167.
+<INFO    > Oct 10 00:16:48 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.126.167
+<INFO    > Oct 10 00:16:49 axis-00408cfb6888 libupnp[3148]: Exiting...
+<INFO    > Oct 10 00:16:49 axis-00408cfb6888 libupnp[3338]: UPnP Initialized(172.16.3.233:49154)
+<INFO    > Oct 10 00:16:50 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:16:51 axis-00408cfb6888 syslogd[3059]: exiting on signal 15
+<INFO    > Oct 10 00:16:51 axis-00408cfb6888 syslogd[3383]: 1.4.1: restart.
+<INFO    > Oct 10 00:16:52 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.126.167 from eth0.
+<INFO    > Oct 10 00:16:52 axis-00408cfb6888 libupnp[3338]: Exiting...
+<INFO    > Oct 10 00:16:53 axis-00408cfb6888 libupnp[3472]: UPnP Initialized(172.16.3.233:49156)
+<INFO    > Oct 10 00:16:57 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.23.225
+<INFO    > Oct 10 00:16:57 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.23.225.
+<WARNING > Oct 10 00:16:58 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (15) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:16:58 axis-00408cfb6888 libupnp[3472]: Exiting...
+<INFO    > Oct 10 00:16:58 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.23.225
+<INFO    > Oct 10 00:16:59 axis-00408cfb6888 libupnp[3652]: UPnP Initialized(172.16.3.233:49157)
+<INFO    > Oct 10 00:16:59 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:17:00 axis-00408cfb6888 syslogd[3383]: exiting on signal 15
+<INFO    > Oct 10 00:17:00 axis-00408cfb6888 syslogd[3699]: 1.4.1: restart.
+<INFO    > Oct 10 00:17:01 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.23.225 from eth0.
+<INFO    > Oct 10 00:17:02 axis-00408cfb6888 libupnp[3652]: Exiting...
+<INFO    > Oct 10 00:17:02 axis-00408cfb6888 libupnp[3788]: UPnP Initialized(172.16.3.233:49161)
+<WARNING > Oct 10 00:17:04 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (16) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:17:06 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.240.214
+<WARNING > Oct 10 00:17:07 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (17) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:17:07 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.240.214.
+<INFO    > Oct 10 00:17:07 axis-00408cfb6888 libupnp[3788]: Exiting...
+<INFO    > Oct 10 00:17:08 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.240.214
+<INFO    > Oct 10 00:17:08 axis-00408cfb6888 libupnp[3977]: UPnP Initialized(172.16.3.233:49153)
+<INFO    > Oct 10 00:17:09 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:17:10 axis-00408cfb6888 syslogd[3699]: exiting on signal 15
+<INFO    > Oct 10 00:17:10 axis-00408cfb6888 syslogd[4025]: 1.4.1: restart.
+<INFO    > Oct 10 00:17:11 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.240.214 from eth0.
+<INFO    > Oct 10 00:17:11 axis-00408cfb6888 libupnp[3977]: Exiting...
+<INFO    > Oct 10 00:17:12 axis-00408cfb6888 libupnp[4114]: UPnP Initialized(172.16.3.233:49153)
+<WARNING > Oct 10 00:17:14 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (18) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:17:16 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.83.7
+<INFO    > Oct 10 00:17:17 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.83.7.
+<INFO    > Oct 10 00:17:17 axis-00408cfb6888 libupnp[4114]: Exiting...
+<INFO    > Oct 10 00:17:18 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.83.7
+
+----- /var/log/messages -----
+
+<INFO    > Oct 10 00:17:18 axis-00408cfb6888 libupnp[4303]: UPnP Initialized(172.16.3.233:49155)
+<INFO    > Oct 10 00:17:18 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:17:20 axis-00408cfb6888 syslogd[4025]: exiting on signal 15
+<INFO    > Oct 10 00:17:20 axis-00408cfb6888 syslogd[4351]: 1.4.1: restart.
+<INFO    > Oct 10 00:17:21 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.83.7 from eth0.
+<INFO    > Oct 10 00:17:21 axis-00408cfb6888 libupnp[4303]: Exiting...
+<INFO    > Oct 10 00:17:22 axis-00408cfb6888 libupnp[4440]: UPnP Initialized(172.16.3.233:49158)
+<WARNING > Oct 10 00:17:24 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (19) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:17:26 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.170.164
+<WARNING > Oct 10 00:17:27 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (20) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:17:27 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.170.164.
+<INFO    > Oct 10 00:17:27 axis-00408cfb6888 libupnp[4440]: Exiting...
+<INFO    > Oct 10 00:17:28 axis-00408cfb6888 libupnp[4620]: UPnP Initialized(172.16.3.233:49159)
+<INFO    > Oct 10 00:17:28 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:17:28 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.170.164
+<INFO    > Oct 10 00:17:30 axis-00408cfb6888 syslogd[4351]: exiting on signal 15
+<INFO    > Oct 10 00:17:30 axis-00408cfb6888 syslogd[4679]: 1.4.1: restart.
+<INFO    > Oct 10 00:17:30 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.170.164 from eth0.
+<INFO    > Oct 10 00:17:31 axis-00408cfb6888 libupnp[4620]: Exiting...
+<INFO    > Oct 10 00:17:31 axis-00408cfb6888 libupnp[4768]: UPnP Initialized(172.16.3.233:49160)
+<WARNING > Oct 10 00:17:33 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (21) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:17:37 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.115.208
+<INFO    > Oct 10 00:17:37 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.115.208.
+<INFO    > Oct 10 00:17:38 axis-00408cfb6888 libupnp[4768]: Exiting...
+<INFO    > Oct 10 00:17:38 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.115.208
+<INFO    > Oct 10 00:17:39 axis-00408cfb6888 libupnp[5006]: UPnP Initialized(172.16.3.233:49162)
+<INFO    > Oct 10 00:17:39 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:17:40 axis-00408cfb6888 syslogd[4679]: exiting on signal 15
+<INFO    > Oct 10 00:17:40 axis-00408cfb6888 syslogd[5054]: 1.4.1: restart.
+<INFO    > Oct 10 00:17:41 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.115.208 from eth0.
+<INFO    > Oct 10 00:17:41 axis-00408cfb6888 libupnp[5006]: Exiting...
+<INFO    > Oct 10 00:17:42 axis-00408cfb6888 libupnp[5143]: UPnP Initialized(172.16.3.233:49163)
+<INFO    > Oct 10 00:17:47 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.43.1
+<INFO    > Oct 10 00:17:47 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.43.1.
+<INFO    > Oct 10 00:17:48 axis-00408cfb6888 libupnp[5143]: Exiting...
+<INFO    > Oct 10 00:17:48 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.43.1
+<INFO    > Oct 10 00:17:49 axis-00408cfb6888 libupnp[5337]: UPnP Initialized(172.16.3.233:49152)
+<INFO    > Oct 10 00:17:49 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:17:50 axis-00408cfb6888 syslogd[5054]: exiting on signal 15
+<INFO    > Oct 10 00:17:50 axis-00408cfb6888 syslogd[5390]: 1.4.1: restart.
+<INFO    > Oct 10 00:17:51 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.43.1 from eth0.
+<INFO    > Oct 10 00:17:52 axis-00408cfb6888 libupnp[5337]: Exiting...
+<INFO    > Oct 10 00:17:52 axis-00408cfb6888 libupnp[5475]: UPnP Initialized(172.16.3.233:49154)
+<INFO    > Oct 10 00:17:57 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.164.228
+<INFO    > Oct 10 00:17:57 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.164.228.
+<INFO    > Oct 10 00:17:58 axis-00408cfb6888 libupnp[5475]: Exiting...
+<INFO    > Oct 10 00:17:58 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.164.228
+<INFO    > Oct 10 00:17:58 axis-00408cfb6888 libupnp[5667]: UPnP Initialized(172.16.3.233:49156)
+<INFO    > Oct 10 00:17:59 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:18:00 axis-00408cfb6888 syslogd[5390]: exiting on signal 15
+<INFO    > Oct 10 00:18:00 axis-00408cfb6888 syslogd[5714]: 1.4.1: restart.
+<INFO    > Oct 10 00:18:01 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.164.228 from eth0.
+<INFO    > Oct 10 00:18:01 axis-00408cfb6888 libupnp[5667]: Exiting...
+<INFO    > Oct 10 00:18:02 axis-00408cfb6888 libupnp[5801]: UPnP Initialized(172.16.3.233:49157)
+<INFO    > Oct 10 00:18:06 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.9.54
+<INFO    > Oct 10 00:18:06 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.9.54.
+<INFO    > Oct 10 00:18:07 axis-00408cfb6888 libupnp[5801]: Exiting...
+<INFO    > Oct 10 00:18:07 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.9.54
+<INFO    > Oct 10 00:18:08 axis-00408cfb6888 libupnp[5977]: UPnP Initialized(172.16.3.233:49161)
+<INFO    > Oct 10 00:18:08 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:18:09 axis-00408cfb6888 syslogd[5714]: exiting on signal 15
+<INFO    > Oct 10 00:18:10 axis-00408cfb6888 syslogd[6034]: 1.4.1: restart.
+<INFO    > Oct 10 00:18:10 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.9.54 from eth0.
+<INFO    > Oct 10 00:18:11 axis-00408cfb6888 libupnp[5977]: Exiting...
+<INFO    > Oct 10 00:18:11 axis-00408cfb6888 libupnp[6120]: UPnP Initialized(172.16.3.233:49164)
+<INFO    > Oct 10 00:18:16 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.199.142
+<INFO    > Oct 10 00:18:17 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.199.142.
+<INFO    > Oct 10 00:18:17 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.199.142
+<INFO    > Oct 10 00:18:17 axis-00408cfb6888 libupnp[6120]: Exiting...
+<INFO    > Oct 10 00:18:18 axis-00408cfb6888 libupnp[6319]: UPnP Initialized(172.16.3.233:49153)
+<INFO    > Oct 10 00:18:18 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:18:19 axis-00408cfb6888 syslogd[6034]: exiting on signal 15
+<INFO    > Oct 10 00:18:20 axis-00408cfb6888 syslogd[6364]: 1.4.1: restart.
+<INFO    > Oct 10 00:18:20 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.199.142 from eth0.
+<INFO    > Oct 10 00:18:21 axis-00408cfb6888 libupnp[6319]: Exiting...
+<INFO    > Oct 10 00:18:21 axis-00408cfb6888 libupnp[6453]: UPnP Initialized(172.16.3.233:49155)
+<INFO    > Oct 10 00:18:25 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.233.180
+<INFO    > Oct 10 00:18:26 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.233.180.
+<INFO    > Oct 10 00:18:26 axis-00408cfb6888 libupnp[6453]: Exiting...
+<INFO    > Oct 10 00:18:27 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.233.180
+<INFO    > Oct 10 00:18:27 axis-00408cfb6888 libupnp[6636]: UPnP Initialized(172.16.3.233:49158)
+<INFO    > Oct 10 00:18:28 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:18:29 axis-00408cfb6888 syslogd[6364]: exiting on signal 15
+<INFO    > Oct 10 00:18:29 axis-00408cfb6888 syslogd[6682]: 1.4.1: restart.
+<INFO    > Oct 10 00:18:30 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.233.180 from eth0.
+<INFO    > Oct 10 00:18:30 axis-00408cfb6888 libupnp[6636]: Exiting...
+<INFO    > Oct 10 00:18:31 axis-00408cfb6888 libupnp[6770]: UPnP Initialized(172.16.3.233:49159)
+<INFO    > Oct 10 00:18:35 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.243.191
+<INFO    > Oct 10 00:18:36 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.243.191.
+<INFO    > Oct 10 00:18:36 axis-00408cfb6888 libupnp[6770]: Exiting...
+<INFO    > Oct 10 00:18:36 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.243.191
+<INFO    > Oct 10 00:18:37 axis-00408cfb6888 libupnp[6961]: UPnP Initialized(172.16.3.233:49160)
+<INFO    > Oct 10 00:18:37 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:18:39 axis-00408cfb6888 syslogd[6682]: exiting on signal 15
+<INFO    > Oct 10 00:18:39 axis-00408cfb6888 syslogd[7008]: 1.4.1: restart.
+<INFO    > Oct 10 00:18:39 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.243.191 from eth0.
+<INFO    > Oct 10 00:18:40 axis-00408cfb6888 libupnp[6961]: Exiting...
+<INFO    > Oct 10 00:18:40 axis-00408cfb6888 libupnp[7097]: UPnP Initialized(172.16.3.233:49162)
+<INFO    > Oct 10 00:18:45 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.92.85
+<INFO    > Oct 10 00:18:45 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.92.85.
+<INFO    > Oct 10 00:18:46 axis-00408cfb6888 libupnp[7097]: Exiting...
+<INFO    > Oct 10 00:18:46 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.92.85
+<INFO    > Oct 10 00:18:47 axis-00408cfb6888 libupnp[7285]: UPnP Initialized(172.16.3.233:49163)
+<INFO    > Oct 10 00:18:47 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:18:48 axis-00408cfb6888 syslogd[7008]: exiting on signal 15
+<INFO    > Oct 10 00:18:48 axis-00408cfb6888 syslogd[7334]: 1.4.1: restart.
+<INFO    > Oct 10 00:18:49 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.92.85 from eth0.
+<INFO    > Oct 10 00:18:49 axis-00408cfb6888 libupnp[7285]: Exiting...
+<INFO    > Oct 10 00:18:50 axis-00408cfb6888 libupnp[7423]: UPnP Initialized(172.16.3.233:49152)
+<INFO    > Oct 10 00:18:55 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.105.18
+<INFO    > Oct 10 00:18:55 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.105.18.
+<INFO    > Oct 10 00:18:56 axis-00408cfb6888 libupnp[7423]: Exiting...
+<INFO    > Oct 10 00:18:56 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.105.18
+<INFO    > Oct 10 00:18:57 axis-00408cfb6888 libupnp[7613]: UPnP Initialized(172.16.3.233:49154)
+<INFO    > Oct 10 00:18:57 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:18:58 axis-00408cfb6888 syslogd[7334]: exiting on signal 15
+<INFO    > Oct 10 00:18:58 axis-00408cfb6888 syslogd[7658]: 1.4.1: restart.
+<INFO    > Oct 10 00:18:59 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.105.18 from eth0.
+<INFO    > Oct 10 00:18:59 axis-00408cfb6888 libupnp[7613]: Exiting...
+<INFO    > Oct 10 00:19:00 axis-00408cfb6888 libupnp[7747]: UPnP Initialized(172.16.3.233:49156)
+<WARNING > Oct 10 00:19:02 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (15) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:19:04 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.143.95
+<WARNING > Oct 10 00:19:05 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (16) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:19:05 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.143.95.
+<INFO    > Oct 10 00:19:05 axis-00408cfb6888 libupnp[7747]: Exiting...
+<INFO    > Oct 10 00:19:06 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.143.95
+<INFO    > Oct 10 00:19:06 axis-00408cfb6888 libupnp[7936]: UPnP Initialized(172.16.3.233:49157)
+<INFO    > Oct 10 00:19:07 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:19:08 axis-00408cfb6888 syslogd[7658]: exiting on signal 15
+<INFO    > Oct 10 00:19:08 axis-00408cfb6888 syslogd[7984]: 1.4.1: restart.
+<INFO    > Oct 10 00:19:09 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.143.95 from eth0.
+<INFO    > Oct 10 00:19:09 axis-00408cfb6888 libupnp[7936]: Exiting...
+<INFO    > Oct 10 00:19:10 axis-00408cfb6888 libupnp[8073]: UPnP Initialized(172.16.3.233:49161)
+<WARNING > Oct 10 00:19:11 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (17) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:19:14 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.31.213
+<INFO    > Oct 10 00:19:15 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.31.213.
+<INFO    > Oct 10 00:19:15 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.31.213
+<INFO    > Oct 10 00:19:16 axis-00408cfb6888 libupnp[8073]: Exiting...
+<INFO    > Oct 10 00:19:16 axis-00408cfb6888 libupnp[8264]: UPnP Initialized(172.16.3.233:49164)
+<INFO    > Oct 10 00:19:17 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:19:18 axis-00408cfb6888 syslogd[7984]: exiting on signal 15
+<INFO    > Oct 10 00:19:18 axis-00408cfb6888 syslogd[8309]: 1.4.1: restart.
+<INFO    > Oct 10 00:19:19 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.31.213 from eth0.
+<INFO    > Oct 10 00:19:19 axis-00408cfb6888 libupnp[8264]: Exiting...
+<INFO    > Oct 10 00:19:20 axis-00408cfb6888 libupnp[8398]: UPnP Initialized(172.16.3.233:49165)
+<WARNING > Oct 10 00:19:22 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (18) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:19:24 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.201.32
+<INFO    > Oct 10 00:19:24 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.201.32.
+<INFO    > Oct 10 00:19:25 axis-00408cfb6888 libupnp[8398]: Exiting...
+<INFO    > Oct 10 00:19:25 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.201.32
+<WARNING > Oct 10 00:19:25 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (19) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:19:26 axis-00408cfb6888 libupnp[8578]: UPnP Initialized(172.16.3.233:49153)
+<INFO    > Oct 10 00:19:26 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:19:27 axis-00408cfb6888 syslogd[8309]: exiting on signal 15
+<INFO    > Oct 10 00:19:27 axis-00408cfb6888 syslogd[8629]: 1.4.1: restart.
+<INFO    > Oct 10 00:19:28 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.201.32 from eth0.
+<INFO    > Oct 10 00:19:28 axis-00408cfb6888 libupnp[8578]: Exiting...
+<INFO    > Oct 10 00:19:29 axis-00408cfb6888 libupnp[8717]: UPnP Initialized(172.16.3.233:49155)
+<WARNING > Oct 10 00:19:31 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (20) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:19:33 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.46.241
+<WARNING > Oct 10 00:19:34 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (21) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:19:34 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.46.241.
+<INFO    > Oct 10 00:19:34 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.46.241
+<INFO    > Oct 10 00:19:35 axis-00408cfb6888 libupnp[8717]: Exiting...
+<INFO    > Oct 10 00:19:35 axis-00408cfb6888 libupnp[8902]: UPnP Initialized(172.16.3.233:49158)
+<INFO    > Oct 10 00:19:35 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:19:37 axis-00408cfb6888 syslogd[8629]: exiting on signal 15
+<INFO    > Oct 10 00:19:37 axis-00408cfb6888 syslogd[8947]: 1.4.1: restart.
+<INFO    > Oct 10 00:19:38 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.46.241 from eth0.
+<INFO    > Oct 10 00:19:38 axis-00408cfb6888 libupnp[8902]: Exiting...
+<INFO    > Oct 10 00:19:39 axis-00408cfb6888 libupnp[9035]: UPnP Initialized(172.16.3.233:49159)
+<WARNING > Oct 10 00:19:40 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (22) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:19:43 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.94.117
+<INFO    > Oct 10 00:19:43 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.94.117.
+<WARNING > Oct 10 00:19:43 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (23) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:19:44 axis-00408cfb6888 libupnp[9035]: Exiting...
+<INFO    > Oct 10 00:19:44 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.94.117
+<INFO    > Oct 10 00:19:45 axis-00408cfb6888 libupnp[9226]: UPnP Initialized(172.16.3.233:49160)
+<INFO    > Oct 10 00:19:45 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:19:46 axis-00408cfb6888 syslogd[8947]: exiting on signal 15
+<INFO    > Oct 10 00:19:46 axis-00408cfb6888 syslogd[9272]: 1.4.1: restart.
+<INFO    > Oct 10 00:19:47 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.94.117 from eth0.
+<INFO    > Oct 10 00:19:47 axis-00408cfb6888 libupnp[9226]: Exiting...
+<INFO    > Oct 10 00:19:48 axis-00408cfb6888 libupnp[9361]: UPnP Initialized(172.16.3.233:49162)
+<WARNING > Oct 10 00:19:50 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (24) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:19:52 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.135.207
+<INFO    > Oct 10 00:19:53 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.135.207.
+<INFO    > Oct 10 00:19:53 axis-00408cfb6888 libupnp[9361]: Exiting...
+<INFO    > Oct 10 00:19:54 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.135.207
+<INFO    > Oct 10 00:19:54 axis-00408cfb6888 libupnp[9548]: UPnP Initialized(172.16.3.233:49152)
+<INFO    > Oct 10 00:19:55 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:19:56 axis-00408cfb6888 syslogd[9272]: exiting on signal 15
+<INFO    > Oct 10 00:19:56 axis-00408cfb6888 syslogd[9598]: 1.4.1: restart.
+<INFO    > Oct 10 00:19:57 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.135.207 from eth0.
+<INFO    > Oct 10 00:19:57 axis-00408cfb6888 libupnp[9548]: Exiting...
+<INFO    > Oct 10 00:19:58 axis-00408cfb6888 libupnp[9687]: UPnP Initialized(172.16.3.233:49152)
+<WARNING > Oct 10 00:19:59 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (25) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:20:02 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.84.173
+<INFO    > Oct 10 00:20:03 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.84.173.
+<INFO    > Oct 10 00:20:03 axis-00408cfb6888 libupnp[9687]: Exiting...
+<INFO    > Oct 10 00:20:04 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.84.173
+<INFO    > Oct 10 00:20:04 axis-00408cfb6888 libupnp[9876]: UPnP Initialized(172.16.3.233:49154)
+<INFO    > Oct 10 00:20:04 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:20:06 axis-00408cfb6888 syslogd[9598]: exiting on signal 15
+<INFO    > Oct 10 00:20:06 axis-00408cfb6888 syslogd[9924]: 1.4.1: restart.
+<INFO    > Oct 10 00:20:07 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.84.173 from eth0.
+<INFO    > Oct 10 00:20:07 axis-00408cfb6888 libupnp[9876]: Exiting...
+<INFO    > Oct 10 00:20:08 axis-00408cfb6888 libupnp[10013]: UPnP Initialized(172.16.3.233:49154)
+<WARNING > Oct 10 00:20:09 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (26) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:20:12 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.6.182
+<INFO    > Oct 10 00:20:13 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.6.182.
+<INFO    > Oct 10 00:20:13 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.6.182
+<INFO    > Oct 10 00:20:14 axis-00408cfb6888 libupnp[10013]: Exiting...
+<INFO    > Oct 10 00:20:14 axis-00408cfb6888 libupnp[10204]: UPnP Initialized(172.16.3.233:49156)
+<INFO    > Oct 10 00:20:14 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:20:16 axis-00408cfb6888 syslogd[9924]: exiting on signal 15
+<INFO    > Oct 10 00:20:16 axis-00408cfb6888 syslogd[10249]: 1.4.1: restart.
+<INFO    > Oct 10 00:20:17 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.6.182 from eth0.
+<INFO    > Oct 10 00:20:17 axis-00408cfb6888 libupnp[10204]: Exiting...
+<INFO    > Oct 10 00:20:18 axis-00408cfb6888 libupnp[10337]: UPnP Initialized(172.16.3.233:49157)
+<WARNING > Oct 10 00:20:20 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (27) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:20:22 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.153.209
+<INFO    > Oct 10 00:20:22 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.153.209.
+<INFO    > Oct 10 00:20:23 axis-00408cfb6888 libupnp[10337]: Exiting...
+<INFO    > Oct 10 00:20:23 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.153.209
+<WARNING > Oct 10 00:20:23 axis-00408cfb6888 mdnsd[1017]: Excessive name conflicts (28) for 233.3.16.172.in-addr.arpa. (PTR); rate limiting in effect
+<INFO    > Oct 10 00:20:24 axis-00408cfb6888 libupnp[10520]: UPnP Initialized(172.16.3.233:49153)
+<INFO    > Oct 10 00:20:24 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:20:25 axis-00408cfb6888 syslogd[10249]: exiting on signal 15
+<INFO    > Oct 10 00:20:25 axis-00408cfb6888 syslogd[10565]: 1.4.1: restart.
+<INFO    > Oct 10 00:20:26 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.153.209 from eth0.
+<INFO    > Oct 10 00:20:26 axis-00408cfb6888 libupnp[10520]: Exiting...
+<INFO    > Oct 10 00:20:27 axis-00408cfb6888 libupnp[10654]: UPnP Initialized(172.16.3.233:49161)
+<INFO    > Oct 10 00:20:31 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.39.44
+<INFO    > Oct 10 00:20:32 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.39.44.
+<INFO    > Oct 10 00:20:32 axis-00408cfb6888 libupnp[10654]: Exiting...
+<INFO    > Oct 10 00:20:33 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.39.44
+<INFO    > Oct 10 00:20:33 axis-00408cfb6888 libupnp[10841]: UPnP Initialized(172.16.3.233:49155)
+<INFO    > Oct 10 00:20:33 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:20:35 axis-00408cfb6888 syslogd[10565]: exiting on signal 15
+<INFO    > Oct 10 00:20:35 axis-00408cfb6888 syslogd[10890]: 1.4.1: restart.
+<INFO    > Oct 10 00:20:36 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.39.44 from eth0.
+<INFO    > Oct 10 00:20:36 axis-00408cfb6888 libupnp[10841]: Exiting...
+<INFO    > Oct 10 00:20:37 axis-00408cfb6888 libupnp[10979]: UPnP Initialized(172.16.3.233:49158)
+<INFO    > Oct 10 00:20:41 axis-00408cfb6888 zeroconf-ip[661]: claimed 169.254.62.234
+<INFO    > Oct 10 00:20:42 axis-00408cfb6888 root: /etc/ipchanged.script: New IP address for eth0 is 169.254.62.234.
+<INFO    > Oct 10 00:20:42 axis-00408cfb6888 zeroconf-ip[661]: lost 169.254.62.234
+<INFO    > Oct 10 00:20:43 axis-00408cfb6888 libupnp[10979]: Exiting...
+<INFO    > Oct 10 00:20:43 axis-00408cfb6888 libupnp[11169]: UPnP Initialized(172.16.3.233:49159)
+<INFO    > Oct 10 00:20:43 axis-00408cfb6888 root: Restarting sysklogd...
+<INFO    > Oct 10 00:20:45 axis-00408cfb6888 syslogd[10890]: exiting on signal 15
+<INFO    > Oct 10 00:20:45 axis-00408cfb6888 syslogd[11214]: 1.4.1: restart.
+<INFO    > Oct 10 00:20:46 axis-00408cfb6888 root: /etc/ipchanged.script: Removed IP address 169.254.62.234 from eth0.
+<INFO    > Oct 10 00:20:46 axis-00408cfb6888 libupnp[11169]: Exiting...
+<INFO    > Oct 10 00:20:47 axis-00408cfb6888 libupnp[11303]: UPnP Initialized(172.16.3.233:49160)
