@@ -7,6 +7,7 @@ edition = "2018"
 repository = "https://github.com/trunnion/vapix/"
 license = "MIT OR Apache-2.0"
 keywords = ["axis", "vapix"]
+exclude = ["fixtures/recordings/*"]
 
 # Cargo.toml reference: https://doc.rust-lang.org/cargo/reference/manifest.html
 
