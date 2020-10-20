@@ -18,6 +18,7 @@ default = ["hyper"]
 chrono = { version = "0.4", features = ["serde"] }
 digest_auth = "0.2"
 futures = "0.3"
+goblin = { git = "https://github.com/willglynn/goblin.git", branch = "arm-extensions", optional = true, features = ["std", "elf32", "elf64"] }
 http = "0.2"
 hyper = { version = "0.13", optional = true }
 quick-xml = { version = "0.17", features = ["serialize"] }

@@ -223,21 +223,7 @@ impl<T: Transport> Device<T> {
 
     /// Return the applications interface, if supported by the device.
     pub async fn applications(&self) -> Result<Option<v3::Applications<'_, T>>, Error<T::Error>> {
-        let params = self
-            .parameters()
-            .list(Some(&["Properties.EmbeddedDevelopment.Version"]))
-            .await?;
-
-        Ok(params
-            .into_iter()
-            .find_map(|(k, v)| {
-                if k == "Properties.EmbeddedDevelopment.Version" {
-                    Some(v)
-                } else {
-                    None
-                }
-            })
-            .map(|ver| v3::Applications::new(self, ver)))
+        v3::Applications::new(self).await
     }
 
     /// Return the system log interface for this device.

@@ -18,10 +18,10 @@
 //
 // However, the HTML+JS in more recent firmware clearly encodes UTF-8. We do the same.
 
-pub mod applications;
+pub mod application;
 pub mod parameters;
 pub mod system_log;
 
-pub use applications::Applications;
+pub use application::Applications;
 pub use parameters::Parameters;
 pub use system_log::SystemLog;

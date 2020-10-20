@@ -8,18 +8,19 @@ Client for [AXIS Communications](https://www.axis.com/en-us) devices' VAPIX API.
 Features:
 
 * `axis::Device` monitors and controls devices running AXIS firmware >= 5.00
-* `axis::Transport` decouples the library from  [`http`](https://crates.io/crates/http)
+* `axis::Transport` decouples the library from any [`http`](https://crates.io/crates/http) implementation
 
 Optional features:
 
-* `hyper`: HTTP via `axis::HyperTransport` (enabled by default)
+* `goblin`: sniff `vapix::application::Architecture` from executable files
+* `hyper`: HTTP via `vapix::HyperTransport` (enabled by default)
 
 ## Basic use
 
 ```rust
 // Instantiate a Device using `hyper` to communicate
 let uri = http::Uri::from_static("http://user:pass@1.2.3.4");
-let device = axis::Device::new(axis::HyperTransport::default(), uri);
+let device = vapix::Device::new(axis::HyperTransport::default(), uri);
 
 // Probe for VAPIX APIs supported by this device
 let services = device.services().await?;
