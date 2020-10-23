@@ -1,13 +1,11 @@
 use serde::Deserialize;
 use std::fmt;
 
-/// An error returned by the `axis` crate.
-///
-/// `Error<TE>` is parameterized by the transport error type `TE`.
+/// An error returned by the `vapix` crate.
 #[derive(Debug)]
-pub enum Error<TE> {
+pub enum Error {
     /// An error from the transport.
-    TransportError(TE),
+    TransportError(crate::transport::Error),
     /// An HTTP request returned a status code indicating failure.
     BadStatusCodeError(http::StatusCode),
     /// An HTTP request returned an unexpected content type.
@@ -22,9 +20,9 @@ pub enum Error<TE> {
     Other(&'static str),
 }
 
-impl<TE: std::error::Error> std::error::Error for Error<TE> {}
+impl std::error::Error for Error {}
 
-impl<TE: fmt::Display> fmt::Display for Error<TE> {
+impl fmt::Display for Error {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
             Error::TransportError(te) => write!(f, "transport error: {}", te),
@@ -38,19 +36,19 @@ impl<TE: fmt::Display> fmt::Display for Error<TE> {
     }
 }
 
-impl<TE> From<serde_json::Error> for Error<TE> {
+impl From<serde_json::Error> for Error {
     fn from(e: serde_json::Error) -> Self {
         Error::UnparseableResponseError(UnparseableResponseError::JsonDeError(e))
     }
 }
 
-impl<TE> From<quick_xml::DeError> for Error<TE> {
+impl From<quick_xml::DeError> for Error {
     fn from(e: quick_xml::DeError) -> Self {
         Error::UnparseableResponseError(UnparseableResponseError::XmlDeError(e))
     }
 }
 
-impl<TE> From<ApiError> for Error<TE> {
+impl From<ApiError> for Error {
     fn from(e: ApiError) -> Self {
         Error::ApiError(e)
     }
@@ -100,7 +98,7 @@ pub struct RawJsonApiError {
     pub message: Option<String>,
 }
 
-impl<TE> From<RawJsonApiError> for Error<TE> {
+impl From<RawJsonApiError> for Error {
     fn from(e: RawJsonApiError) -> Self {
         Error::ApiError(e.into())
     }
@@ -110,7 +108,7 @@ pub(crate) trait ResultExt {
     fn map_404_to_unsupported_feature(self) -> Self;
 }
 
-impl<T, TE> ResultExt for std::result::Result<T, Error<TE>> {
+impl<T> ResultExt for std::result::Result<T, Error> {
     fn map_404_to_unsupported_feature(self) -> Self {
         match self {
             Err(Error::BadStatusCodeError(http::StatusCode::NOT_FOUND)) => {

@@ -15,9 +15,7 @@ pub struct Applications<'a, T: Transport> {
 }
 
 impl<'a, T: Transport> Applications<'a, T> {
-    pub(crate) async fn new(
-        device: &'a Device<T>,
-    ) -> Result<Option<Applications<'a, T>>, Error<T::Error>> {
+    pub(crate) async fn new(device: &'a Device<T>) -> Result<Option<Applications<'a, T>>, Error> {
         let mut params = device
             .parameters()
             .list(Some(
@@ -70,7 +68,7 @@ impl<'a, T: Transport> Applications<'a, T> {
     }
 
     /// Upload an application package to the device.
-    pub async fn upload(&self, application_package_data: &[u8]) -> Result<(), Error<T::Error>> {
+    pub async fn upload(&self, application_package_data: &[u8]) -> Result<(), Error> {
         let mut request_body = b"--fileboundary\r\n\
         Content-Disposition: form-data; name=\"packfil\"; filename=\"application.eap\"\r\n\
         Content-Type: application/octet-stream\r\n\

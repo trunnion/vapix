@@ -22,6 +22,7 @@ goblin = { git = "https://github.com/willglynn/goblin.git", branch = "arm-extens
 http = "0.2"
 hyper = { version = "0.13", optional = true }
 quick-xml = { version = "0.17", features = ["serialize"] }
+pin-project = "0.4"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 serde_urlencoded = "0.6"
@@ -29,7 +30,6 @@ serde_urlencoded = "0.6"
 [dev-dependencies]
 criterion = "0.3"
 tokio = { version = "0.2", features = ["full"] }
-pin-project = "0.4"
 lazy_static = "1.4"
 
 [[bench]]

@@ -24,7 +24,7 @@ pub struct Services<'a, T: Transport> {
 }
 
 impl<'a, T: Transport> Services<'a, T> {
-    pub(crate) async fn new(device: &'a Device<T>) -> Result<Services<'a, T>, Error<T::Error>> {
+    pub(crate) async fn new(device: &'a Device<T>) -> Result<Services<'a, T>, Error> {
         #[derive(Deserialize)]
         #[serde(rename_all = "camelCase")]
         struct Resp {

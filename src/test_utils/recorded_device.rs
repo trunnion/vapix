@@ -28,7 +28,7 @@ pub struct TestDevice {
 pub fn test_with_devices<FN, F>(f: FN)
 where
     FN: Fn(TestDevice) -> F,
-    F: Future<Output = Result<(), Error<TestDeviceTransportError>>> + Send + 'static,
+    F: Future<Output = Result<(), Error>> + Send + 'static,
 {
     tokio::runtime::Builder::new()
         .basic_scheduler()
@@ -59,9 +59,10 @@ where
                     Ok(Err(Error::UnsupportedFeature)) => {
                         // acceptable failure mode
                     }
-                    Ok(Err(Error::TransportError(
-                        TestDeviceTransportError::RequestNotRecorded,
-                    ))) => {
+                    Ok(Err(Error::TransportError(e)))
+                        if e.downcast_ref()
+                            == Some(&TestDeviceTransportError::RequestNotRecorded) =>
+                    {
                         eprintln!(
                             "serial {:?} version {} is missing a recording",
                             device_info.serial_number, device_info.firmware_version,
@@ -224,7 +225,6 @@ enum TestDeviceTransportInner {
 }
 
 impl Transport for TestDeviceTransport {
-    type Error = TestDeviceTransportError;
     type Output = TestDeviceTransportOutput;
     type Body = TestDeviceTransportBody;
     type Chunk = Vec<u8>;
@@ -254,7 +254,16 @@ impl Transport for TestDeviceTransport {
 #[derive(Debug)]
 pub enum TestDeviceTransportError {
     RequestNotRecorded,
-    LiveError(::hyper::Error),
+    LiveError(crate::transport::Error),
+}
+
+impl PartialEq for TestDeviceTransportError {
+    fn eq(&self, other: &Self) -> bool {
+        match (self, other) {
+            (&Self::RequestNotRecorded, &Self::RequestNotRecorded) => true,
+            _ => false,
+        }
+    }
 }
 
 impl std::error::Error for TestDeviceTransportError {}
@@ -278,7 +287,7 @@ enum TestDeviceTransportOutputInner {
 }
 
 impl Future for TestDeviceTransportOutput {
-    type Output = Result<http::Response<TestDeviceTransportBody>, TestDeviceTransportError>;
+    type Output = Result<http::Response<TestDeviceTransportBody>, crate::transport::Error>;
 
     fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {
         match self.project().0.project() {
@@ -294,7 +303,9 @@ impl Future for TestDeviceTransportOutput {
                         .unwrap();
                     Poll::Ready(Ok(resp))
                 }
-                None => Poll::Ready(Err(TestDeviceTransportError::RequestNotRecorded)),
+                None => Poll::Ready(Err(crate::transport::Error::new(
+                    TestDeviceTransportError::RequestNotRecorded,
+                ))),
             },
             __TestDeviceTransportOutputInnerProjection::Eavesdrop(o) => {
                 o.poll(cx).map(|r| match r {
@@ -305,7 +316,9 @@ impl Future for TestDeviceTransportOutput {
                         );
                         Ok(http::Response::from_parts(parts, body))
                     }
-                    Err(e) => Err(TestDeviceTransportError::LiveError(e)),
+                    Err(e) => Err(crate::transport::Error::new(
+                        TestDeviceTransportError::LiveError(e),
+                    )),
                 })
             }
         }
@@ -322,7 +335,7 @@ enum TestDeviceTransportBodyInner {
 }
 
 impl futures::Stream for TestDeviceTransportBody {
-    type Item = Result<Vec<u8>, TestDeviceTransportError>;
+    type Item = Result<Vec<u8>, crate::transport::Error>;
 
     fn poll_next(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Option<Self::Item>> {
         match self.project().0.project() {
@@ -332,9 +345,9 @@ impl futures::Stream for TestDeviceTransportBody {
             },
             __TestDeviceTransportBodyInnerProjection::Eavesdrop(b) => match b.poll_next(cx) {
                 Poll::Ready(Some(Ok(c))) => Poll::Ready(Some(Ok(c.as_ref().to_vec()))),
-                Poll::Ready(Some(Err(e))) => {
-                    Poll::Ready(Some(Err(TestDeviceTransportError::LiveError(e))))
-                }
+                Poll::Ready(Some(Err(e))) => Poll::Ready(Some(Err(crate::transport::Error::new(
+                    TestDeviceTransportError::LiveError(e),
+                )))),
                 Poll::Ready(None) => Poll::Ready(None),
                 Poll::Pending => Poll::Pending,
             },

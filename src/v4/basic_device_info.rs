@@ -64,7 +64,7 @@ impl<'a, T: Transport> BasicDeviceInfo<'a, T> {
     }
 
     /// Retreive `Properties`.
-    pub async fn properties(&self) -> Result<Properties, crate::Error<T::Error>> {
+    pub async fn properties(&self) -> Result<Properties, crate::Error> {
         #[derive(Serialize)]
         #[serde(rename_all = "camelCase")]
         struct Req<'a> {

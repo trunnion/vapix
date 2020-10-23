@@ -12,7 +12,7 @@ impl<'a, T: Transport> DiskManagement<'a, T> {
     }
 
     /// List disks provided by the device.
-    pub async fn list(&self) -> Result<Vec<DiskInfo>, Error<T::Error>> {
+    pub async fn list(&self) -> Result<Vec<DiskInfo>, Error> {
         let req = http::Request::builder()
             .method(http::Method::GET)
             .uri(

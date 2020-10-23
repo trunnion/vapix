@@ -17,7 +17,7 @@ impl<'a, T: Transport> SystemLog<'a, T> {
     // Retrieve system log information.
     //
     // The level of information included in the log is set in the `Log.System` parameter group.
-    pub async fn entries(&self) -> Result<Entries, Error<T::Error>> {
+    pub async fn entries(&self) -> Result<Entries, Error> {
         let req = http::request::Builder::new()
             .method(http::Method::GET)
             .uri(self.0.uri_for("/axis-cgi/systemlog.cgi").unwrap())

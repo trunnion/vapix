@@ -12,7 +12,7 @@ pub struct TestDevice {
 pub fn test_with_devices<FN, F>(_f: FN)
 where
     FN: Fn(TestDevice) -> F,
-    F: Future<Output = Result<(), Error<TestDeviceTransportError>>> + Send + 'static,
+    F: Future<Output = Result<(), Error>> + Send + 'static,
 {
     unimplemented!()
 }

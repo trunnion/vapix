@@ -19,7 +19,7 @@ pub async fn new_eavesdrop_device(
         Device<EavesdropTransport<HyperTransport>>,
         Writer,
     ),
-    Error<::hyper::Error>,
+    Error,
 > {
     let device = Device::new(HyperTransport::default(), uri.clone());
     let device_info = DeviceInfo::retrieve(&device).await;
@@ -106,7 +106,6 @@ impl<T: Transport> EavesdropTransport<T> {
 }
 
 impl<T: Transport> Transport for EavesdropTransport<T> {
-    type Error = T::Error;
     type Output = EavesdropTransportOutput<T>;
     type Body = EavesdropTransportBody<T>;
     type Chunk = T::Chunk;
@@ -131,7 +130,7 @@ pub struct EavesdropTransportOutput<T: Transport> {
 }
 
 impl<T: Transport> Future for EavesdropTransportOutput<T> {
-    type Output = Result<http::Response<EavesdropTransportBody<T>>, T::Error>;
+    type Output = Result<http::Response<EavesdropTransportBody<T>>, crate::transport::Error>;
 
     fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {
         let this = self.project();
@@ -166,7 +165,7 @@ pub struct EavesdropTransportBody<T: Transport> {
 }
 
 impl<T: Transport> futures::Stream for EavesdropTransportBody<T> {
-    type Item = Result<T::Chunk, T::Error>;
+    type Item = Result<T::Chunk, crate::transport::Error>;
 
     fn poll_next(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Option<Self::Item>> {
         let this = self.project();
@@ -182,7 +181,7 @@ impl<T: Transport> futures::Stream for EavesdropTransportBody<T> {
             }
             Poll::Ready(Some(Err(e))) => {
                 this.state.take();
-                Poll::Ready(Some(Err(e)))
+                Poll::Ready(Some(Err(e.into())))
             }
             Poll::Ready(None) => {
                 // done

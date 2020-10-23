@@ -100,7 +100,7 @@ impl<T: Transport> Device<T> {
         &self,
         req: http::Request<Vec<u8>>,
         expected_content_type: &'static str,
-    ) -> Result<(http::response::Parts, Vec<u8>), Error<T::Error>> {
+    ) -> Result<(http::response::Parts, Vec<u8>), Error> {
         // Build a retry request before sending the first request
         // Split it into parts
         let (mut parts, body) = req.into_parts();
@@ -217,12 +217,12 @@ impl<T: Transport> Device<T> {
     /// Discover which VAPIX services the device supports.
     ///
     /// Requires firmware >= 8.50.
-    pub async fn services(&self) -> Result<v4::Services<'_, T>, Error<T::Error>> {
+    pub async fn services(&self) -> Result<v4::Services<'_, T>, Error> {
         v4::Services::new(self).await
     }
 
     /// Return the applications interface, if supported by the device.
-    pub async fn applications(&self) -> Result<Option<v3::Applications<'_, T>>, Error<T::Error>> {
+    pub async fn applications(&self) -> Result<Option<v3::Applications<'_, T>>, Error> {
         v3::Applications::new(self).await
     }
 

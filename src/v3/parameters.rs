@@ -21,7 +21,7 @@ impl<'a, T: Transport> Parameters<'a, T> {
     pub async fn list_definitions(
         &self,
         groups: Option<&[&str]>,
-    ) -> Result<ParameterDefinitions, Error<T::Error>> {
+    ) -> Result<ParameterDefinitions, Error> {
         let req = http::Request::builder()
             .method(http::Method::GET)
             .uri(
@@ -52,10 +52,7 @@ impl<'a, T: Transport> Parameters<'a, T> {
     /// List parameters, including their current values.
     ///
     /// If `groups` is provided, return a subset of the parameter tree.
-    pub async fn list(
-        &self,
-        groups: Option<&[&str]>,
-    ) -> Result<BTreeMap<String, String>, Error<T::Error>> {
+    pub async fn list(&self, groups: Option<&[&str]>) -> Result<BTreeMap<String, String>, Error> {
         let req = http::request::Builder::new()
             .method(http::Method::GET)
             .uri(
@@ -100,7 +97,7 @@ impl<'a, T: Transport> Parameters<'a, T> {
     pub async fn update<I: IntoIterator<Item = (K, V)>, K: AsRef<str>, V: AsRef<str>>(
         &self,
         parameters: I,
-    ) -> Result<(), Error<T::Error>> {
+    ) -> Result<(), Error> {
         let mut query_params: BTreeMap<String, String> = parameters
             .into_iter()
             .map(move |(k, v)| (k.as_ref().to_string(), v.as_ref().to_string()))

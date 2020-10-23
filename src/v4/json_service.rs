@@ -16,7 +16,7 @@ impl<'a, T: Transport> JsonService<'a, T> {
         }
     }
 
-    async fn inner<RQ, RS>(&self, method: &str, request: Option<RQ>) -> Result<RS, Error<T::Error>>
+    async fn inner<RQ, RS>(&self, method: &str, request: Option<RQ>) -> Result<RS, Error>
     where
         RQ: serde::Serialize,
         RS: serde::de::DeserializeOwned,
@@ -66,7 +66,7 @@ impl<'a, T: Transport> JsonService<'a, T> {
         }
     }
 
-    pub async fn call_method<RQ, RS>(&self, method: &str, params: RQ) -> Result<RS, Error<T::Error>>
+    pub async fn call_method<RQ, RS>(&self, method: &str, params: RQ) -> Result<RS, Error>
     where
         RQ: serde::Serialize,
         RS: serde::de::DeserializeOwned,
@@ -74,7 +74,7 @@ impl<'a, T: Transport> JsonService<'a, T> {
         self.inner(method, Some(params)).await
     }
 
-    pub async fn call_method_bare<RS>(&self, method: &str) -> Result<RS, Error<T::Error>>
+    pub async fn call_method_bare<RS>(&self, method: &str) -> Result<RS, Error>
     where
         RS: serde::de::DeserializeOwned,
     {
