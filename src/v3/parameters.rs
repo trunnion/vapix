@@ -1,6 +1,6 @@
 //! The VAPIX v3 parameters interface at `/axis-cgi/param.cgi`.
 
-use crate::{Client, Error, Transport};
+use crate::*;
 use serde::{Deserialize, Serialize};
 use std::collections::BTreeMap;
 use std::convert::TryFrom;
@@ -18,10 +18,7 @@ impl<'a, T: Transport> Parameters<'a, T> {
     /// List parameters, including their definitions and current values.
     ///
     /// If `groups` is provided, return a subset of the parameter tree.
-    pub async fn list_definitions(
-        &self,
-        groups: Option<&[&str]>,
-    ) -> Result<ParameterDefinitions, Error> {
+    pub async fn list_definitions(&self, groups: Option<&[&str]>) -> Result<ParameterDefinitions> {
         let req = http::Request::builder()
             .method(http::Method::GET)
             .uri(
@@ -52,7 +49,7 @@ impl<'a, T: Transport> Parameters<'a, T> {
     /// List parameters, including their current values.
     ///
     /// If `groups` is provided, return a subset of the parameter tree.
-    pub async fn list(&self, groups: Option<&[&str]>) -> Result<BTreeMap<String, String>, Error> {
+    pub async fn list(&self, groups: Option<&[&str]>) -> Result<BTreeMap<String, String>> {
         let req = http::request::Builder::new()
             .method(http::Method::GET)
             .uri(
@@ -97,7 +94,7 @@ impl<'a, T: Transport> Parameters<'a, T> {
     pub async fn update<I: IntoIterator<Item = (K, V)>, K: AsRef<str>, V: AsRef<str>>(
         &self,
         parameters: I,
-    ) -> Result<(), Error> {
+    ) -> Result<()> {
         let mut query_params: BTreeMap<String, String> = parameters
             .into_iter()
             .map(move |(k, v)| (k.as_ref().to_string(), v.as_ref().to_string()))

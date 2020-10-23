@@ -1,4 +1,6 @@
-//! # `axis`
+//! # `vapix`
+//!
+//! Client for [AXIS Communications](https://www.axis.com/en-us) devices' VAPIX API. Bullet points:
 
 #![forbid(unsafe_code)]
 //#![forbid(missing_docs)]
@@ -12,8 +14,8 @@ pub mod v3;
 pub mod v4;
 
 pub use client::Client;
-pub use error::Error;
 pub(crate) use error::ResultExt;
+pub use error::{Error, Result};
 pub use transport::Transport;
 
 #[cfg(all(feature = "hyper"))]

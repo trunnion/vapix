@@ -1,4 +1,4 @@
-use crate::{v3, v4, Error, Transport};
+use crate::*;
 use futures::StreamExt;
 use std::convert::TryInto;
 
@@ -99,7 +99,7 @@ impl<T: Transport> Client<T> {
         &self,
         req: http::Request<Vec<u8>>,
         expected_content_type: &'static str,
-    ) -> Result<(http::response::Parts, Vec<u8>), Error> {
+    ) -> Result<(http::response::Parts, Vec<u8>)> {
         // Build a retry request before sending the first request
         // Split it into parts
         let (mut parts, body) = req.into_parts();
@@ -207,12 +207,12 @@ impl<T: Transport> Client<T> {
     /// Discover which VAPIX services the device supports.
     ///
     /// Requires firmware >= 8.50.
-    pub async fn services(&self) -> Result<v4::Services<'_, T>, Error> {
+    pub async fn services(&self) -> Result<v4::Services<'_, T>> {
         v4::Services::new(self).await
     }
 
     /// Return the applications interface, if supported by the device.
-    pub async fn applications(&self) -> Result<Option<v3::Applications<'_, T>>, Error> {
+    pub async fn applications(&self) -> Result<Option<v3::Applications<'_, T>>> {
         v3::Applications::new(self).await
     }
 

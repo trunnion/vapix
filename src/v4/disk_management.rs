@@ -1,6 +1,6 @@
 //! The [disk management API](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004496).
 
-use crate::{Client, Error, Transport};
+use crate::*;
 use serde::Deserialize;
 
 /// The disk management API.
@@ -12,7 +12,7 @@ impl<'a, T: Transport> DiskManagement<'a, T> {
     }
 
     /// List disks provided by the device.
-    pub async fn list(&self) -> Result<Vec<DiskInfo>, Error> {
+    pub async fn list(&self) -> Result<Vec<DiskInfo>> {
         let req = http::Request::builder()
             .method(http::Method::GET)
             .uri(
@@ -160,7 +160,7 @@ mod tests {
     fn list() {
         crate::test_with_devices(|test_device| async move {
             let services = test_device.client.services().await?;
-            let disk_management = services.disk_management.ok_or(Error::UnsupportedFeature)?;
+            let disk_management = services.disk_management.ok_or(Error::FeatureUnavailable)?;
 
             // disk list should always be non-empty
             let disks = disk_management.list().await?;

@@ -1,7 +1,7 @@
 //! The [basic device info API](https://www.axis.com/vapix-library/subjects/t10037719/section/t10132180/display).
 
 use crate::v4::JsonService;
-use crate::{Client, Transport};
+use crate::*;
 use serde::{Deserialize, Serialize};
 
 /// The basic device info API.
@@ -64,7 +64,7 @@ impl<'a, T: Transport> BasicDeviceInfo<'a, T> {
     }
 
     /// Retreive `Properties`.
-    pub async fn properties(&self) -> Result<Properties, crate::Error> {
+    pub async fn properties(&self) -> Result<Properties> {
         #[derive(Serialize)]
         #[serde(rename_all = "camelCase")]
         struct Req<'a> {

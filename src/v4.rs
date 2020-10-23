@@ -3,7 +3,7 @@
 //! section](https://www.axis.com/vapix-library/subjects/t10037719/section/t10035974/display).
 
 use crate::v3::Parameters;
-use crate::{Client, Error, ResultExt, Transport};
+use crate::*;
 use serde::Deserialize;
 
 use basic_device_info::BasicDeviceInfo;
@@ -24,7 +24,7 @@ pub struct Services<'a, T: Transport> {
 }
 
 impl<'a, T: Transport> Services<'a, T> {
-    pub(crate) async fn new(device: &'a Client<T>) -> Result<Services<'a, T>, Error> {
+    pub(crate) async fn new(device: &'a Client<T>) -> Result<Services<'a, T>> {
         #[derive(Deserialize)]
         #[serde(rename_all = "camelCase")]
         struct Resp {
@@ -41,7 +41,7 @@ impl<'a, T: Transport> Services<'a, T> {
         let resp: Resp = JsonService::new(device, "/axis-cgi/apidiscovery.cgi", "1.0".to_string())
             .call_method_bare("getApiList")
             .await
-            .map_404_to_unsupported_feature()?;
+            .map_404_to_feature_unavailable()?;
 
         let mut services = Services {
             parameters: None,
@@ -80,7 +80,7 @@ mod tests {
         });
 
         match Services::new(&device).await {
-            Err(Error::UnsupportedFeature) => {
+            Err(Error::FeatureUnavailable) => {
                 // expected result
             }
             Ok(_) => panic!("should have failed"),

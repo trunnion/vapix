@@ -56,7 +56,7 @@ where
                     Ok(Ok(())) => {
                         successes += 1;
                     }
-                    Ok(Err(Error::UnsupportedFeature)) => {
+                    Ok(Err(Error::FeatureUnavailable)) => {
                         // acceptable failure mode
                     }
                     Ok(Err(Error::HttpRequestFailed(e)))

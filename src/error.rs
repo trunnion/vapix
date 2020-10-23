@@ -1,17 +1,20 @@
 use serde::Deserialize;
 use std::fmt;
 
+/// A `Result` returned by the `vapix` crate.
+pub type Result<T, E = Error> = std::result::Result<T, E>;
+
 /// An error returned by the `vapix` crate.
 #[derive(Debug)]
 pub enum Error {
     /// An HTTP request failed.
     HttpRequestFailed(Box<dyn std::error::Error + Send + 'static>),
+    /// The device does not provide this feature.
+    FeatureUnavailable,
     /// An HTTP request returned a response which could not be parsed.
     UnparseableResponseError(UnparseableResponseError),
     /// The API call returned a structured error.
     ApiError(ApiError),
-    /// The device does not support this feature.
-    UnsupportedFeature,
     /// An error which isn't yet properly itemized.
     Other(&'static str),
 }
@@ -22,9 +25,9 @@ impl fmt::Display for Error {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
             Error::HttpRequestFailed(te) => write!(f, "HTTP request failed: {}", te),
+            Error::FeatureUnavailable => write!(f, "this device does not support that feature"),
             Error::UnparseableResponseError(e) => write!(f, "unparseable response: {:?}", e),
             Error::ApiError(e) => write!(f, "JSON API error: {:?}", e),
-            Error::UnsupportedFeature => write!(f, "this device does not support that feature"),
             Error::Other(e) => write!(f, "error: {}", e),
         }
     }
@@ -146,16 +149,16 @@ impl From<HttpContentTypeError> for Error {
 }
 
 pub(crate) trait ResultExt {
-    fn map_404_to_unsupported_feature(self) -> Self;
+    fn map_404_to_feature_unavailable(self) -> Self;
 }
 
-impl<T> ResultExt for std::result::Result<T, Error> {
-    fn map_404_to_unsupported_feature(self) -> Self {
+impl<T> ResultExt for Result<T> {
+    fn map_404_to_feature_unavailable(self) -> Self {
         match self {
             Err(Error::HttpRequestFailed(e))
                 if e.downcast_ref() == Some(&HttpStatusCodeError(http::StatusCode::NOT_FOUND)) =>
             {
-                Err(Error::UnsupportedFeature)
+                Err(Error::FeatureUnavailable)
             }
             other => other,
         }
