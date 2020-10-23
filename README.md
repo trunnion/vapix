@@ -8,8 +8,8 @@ Client for [AXIS Communications](https://www.axis.com/en-us) devices' VAPIX API.
 
 Features:
 
-* `axis::Device` monitors and controls devices running AXIS firmware >= 5.00
-* `axis::Transport` decouples the library from any [`http`](https://crates.io/crates/http) implementation
+* `vapix::Device` monitors and controls devices running AXIS firmware >= 5.00
+* `vapix::Transport` decouples the library from any [`http`](https://crates.io/crates/http) implementation
 
 Optional features:
 
