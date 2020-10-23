@@ -114,10 +114,10 @@ impl Architecture {
             },
             // Arm, little endian:
             EM_ARM if elf.header.e_ident[EI_DATA] == ELFDATA2LSB => {
-                // Detect Armv7hf by looking only at the ELF header
+                // There's only one Arm hard-float arch
+                // Let's decide that any hard-float image is Armv7-HF
                 if let Some(arm_header) = elf.header.arm() {
                     if arm_header.is_hard_float() {
-                        // There's only one Arm hard-float arch
                         return Some(Architecture::Armv7Hf);
                     }
                 } else {
@@ -125,7 +125,7 @@ impl Architecture {
                     unreachable!();
                 }
 
-                // We're soft-float
+                // ELF header says we're soft-float
                 // Check the aeabi build attributes to discrimate architecture with specificity
                 if let Ok(aeabi) = elf.aeabi(executable) {
                     use goblin::elf::build_attributes::aeabi::CpuArch;
@@ -294,8 +294,10 @@ mod tests {
 
     #[cfg(feature = "goblin")]
     #[test]
-    fn from_elf_header() {
-        let file = std::fs::read("fixtures/encode").unwrap();
-        assert_eq!(Architecture::sniff(&file), Some(Architecture::Armv7Hf));
+    fn sniff() {
+        for arch in Architecture::all() {
+            let file = std::fs::read(format!("fixtures/elf/arch.{}", arch)).unwrap();
+            assert_eq!(Architecture::sniff(&file), Some(*arch));
+        }
     }
 }
