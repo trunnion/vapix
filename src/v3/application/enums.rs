@@ -292,6 +292,7 @@ impl std::fmt::Display for SOC {
 mod tests {
     use super::*;
 
+    #[cfg(feature = "goblin")]
     #[test]
     fn from_elf_header() {
         let file = std::fs::read("fixtures/encode").unwrap();
