@@ -4,7 +4,7 @@ use std::pin::Pin;
 use std::sync::Mutex;
 use std::task::{Context, Poll};
 
-pub fn mock_device<F, B, E>(f: F) -> crate::Device<impl crate::Transport>
+pub fn mock_client<F, B, E>(f: F) -> crate::Client<impl crate::Transport>
 where
     F: FnMut(http::Request<Vec<u8>>) -> Result<http::Response<B>, E>,
     B: IntoIterator<Item = Vec<u8>>,
@@ -13,7 +13,7 @@ where
 {
     let t = TransportAdapter(Mutex::new(f));
     let uri = http::Uri::from_static("http://1.2.3.4");
-    crate::Device::new(t, uri)
+    crate::Client::new(t, uri)
 }
 
 struct TransportAdapter<F>(Mutex<F>);

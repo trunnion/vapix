@@ -20,8 +20,8 @@ use eavesdrop::*;
 /// A test device, either pre-recorded or live.
 pub struct TestDevice {
     pub device_info: DeviceInfo,
-    pub device: Device<TestDeviceTransport>,
-    device_guard: Option<tokio::sync::OwnedMutexGuard<Option<Device<TestDeviceTransport>>>>,
+    pub client: Client<TestDeviceTransport>,
+    device_guard: Option<tokio::sync::OwnedMutexGuard<Option<Client<TestDeviceTransport>>>>,
     writer: Option<Writer>,
 }
 
@@ -112,7 +112,7 @@ fn fixture_test_devices() -> Vec<TestDevice> {
 
             TestDevice {
                 device_info,
-                device: crate::Device::new(transport, uri.clone()),
+                client: crate::Client::new(transport, uri.clone()),
                 device_guard: None,
                 writer: None,
             }
@@ -143,7 +143,7 @@ fn load_fixture_recordings() -> Vec<Arc<Recording>> {
 #[derive(Clone)]
 struct LiveTestDeviceInstanceFactory {
     device_info: DeviceInfo,
-    device: Arc<tokio::sync::Mutex<Option<Device<TestDeviceTransport>>>>,
+    device: Arc<tokio::sync::Mutex<Option<Client<TestDeviceTransport>>>>,
     writer: Writer,
 }
 
@@ -183,7 +183,7 @@ impl LiveTestDeviceInstanceFactory {
         let mut device_guard = self.device.clone().lock_owned().await;
         TestDevice {
             device_info: self.device_info.clone(),
-            device: device_guard.take().expect("must contain device"),
+            client: device_guard.take().expect("must contain device"),
             device_guard: Some(device_guard),
             writer: Some(self.writer.clone()),
         }
@@ -193,11 +193,11 @@ impl LiveTestDeviceInstanceFactory {
 impl Drop for TestDevice {
     fn drop(&mut self) {
         if let Some(guard) = self.device_guard.as_mut() {
-            let mut device = Device::new(
+            let mut device = Client::new(
                 TestDeviceTransport::default(),
                 http::Uri::from_static("http://1.2.3.4"),
             );
-            std::mem::swap(&mut device, &mut self.device);
+            std::mem::swap(&mut device, &mut self.client);
             guard.replace(device);
         }
 

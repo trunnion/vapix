@@ -1,6 +1,6 @@
 //! The VAPIX v3 parameters interface at `/axis-cgi/param.cgi`.
 
-use crate::{Device, Error, Transport};
+use crate::{Client, Error, Transport};
 use serde::{Deserialize, Serialize};
 use std::collections::BTreeMap;
 use std::convert::TryFrom;
@@ -8,10 +8,10 @@ use std::fmt;
 use std::str::FromStr;
 
 /// A device's legacy parameters API.
-pub struct Parameters<'a, T: Transport>(&'a Device<T>, String);
+pub struct Parameters<'a, T: Transport>(&'a Client<T>, String);
 
 impl<'a, T: Transport> Parameters<'a, T> {
-    pub(crate) fn new(device: &'a Device<T>, api_version: String) -> Self {
+    pub(crate) fn new(device: &'a Client<T>, api_version: String) -> Self {
         Self(device, api_version)
     }
 
@@ -524,7 +524,7 @@ mod tests {
     #[test]
     fn list() {
         crate::test_with_devices(|test_device| async move {
-            let parameters = test_device.device.parameters();
+            let parameters = test_device.client.parameters();
 
             let all_params = parameters.list(None).await?;
 
@@ -561,7 +561,7 @@ mod tests {
     #[test]
     fn list_definitions() {
         crate::test_with_devices(|test_device| async move {
-            let parameters = test_device.device.parameters();
+            let parameters = test_device.client.parameters();
 
             let all_params = parameters.list_definitions(None).await?;
 
@@ -593,7 +593,7 @@ mod tests {
 
     #[tokio::test]
     async fn update() {
-        let device = crate::mock_device(|req| {
+        let device = crate::mock_client(|req| {
             assert_eq!(req.method(), http::Method::GET);
             assert_eq!(
                 req.uri().path_and_query().map(|pq| pq.as_str()),
@@ -615,7 +615,7 @@ mod tests {
             Err(e) => panic!("update should succeed: {}", e),
         };
 
-        let device = crate::mock_device(|req| {
+        let device = crate::mock_client(|req| {
             assert_eq!(req.method(), http::Method::GET);
             assert_eq!(
                 req.uri().path_and_query().map(|pq| pq.as_str()),

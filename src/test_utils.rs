@@ -1,8 +1,8 @@
 mod device_info;
 pub use device_info::DeviceInfo;
 
-mod mock_device;
-pub use mock_device::mock_device;
+mod mock_client;
+pub use mock_client::mock_client;
 
 pub mod recorded_device;
 pub use recorded_device::{

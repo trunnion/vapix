@@ -3,7 +3,7 @@
 //! section](https://www.axis.com/vapix-library/subjects/t10037719/section/t10035974/display).
 
 use crate::v3::Parameters;
-use crate::{Device, Error, ResultExt, Transport};
+use crate::{Client, Error, ResultExt, Transport};
 use serde::Deserialize;
 
 use basic_device_info::BasicDeviceInfo;
@@ -24,7 +24,7 @@ pub struct Services<'a, T: Transport> {
 }
 
 impl<'a, T: Transport> Services<'a, T> {
-    pub(crate) async fn new(device: &'a Device<T>) -> Result<Services<'a, T>, Error> {
+    pub(crate) async fn new(device: &'a Client<T>) -> Result<Services<'a, T>, Error> {
         #[derive(Deserialize)]
         #[serde(rename_all = "camelCase")]
         struct Resp {
@@ -72,7 +72,7 @@ mod tests {
 
     #[tokio::test]
     async fn unsupported_feature() {
-        let device = crate::test_utils::mock_device(|req| {
+        let device = crate::test_utils::mock_client(|req| {
             assert_eq!(req.uri().path(), "/axis-cgi/apidiscovery.cgi");
             http::Response::builder()
                 .status(http::StatusCode::NOT_FOUND)
@@ -90,7 +90,7 @@ mod tests {
 
     #[tokio::test]
     async fn no_services() {
-        let device = crate::test_utils::mock_device(|req| {
+        let device = crate::test_utils::mock_client(|req| {
             assert_eq!(req.uri().path(), "/axis-cgi/apidiscovery.cgi");
             assert_eq!(
                 req.headers()
@@ -120,7 +120,7 @@ mod tests {
 
     #[tokio::test]
     async fn typical_services_response() {
-        let device = crate::test_utils::mock_device(|req| {
+        let device = crate::test_utils::mock_client(|req| {
             assert_eq!(req.uri().path(), "/axis-cgi/apidiscovery.cgi");
             assert_eq!(
                 req.headers()

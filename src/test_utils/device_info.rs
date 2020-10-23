@@ -27,7 +27,7 @@ impl Default for DeviceInfo {
 }
 
 impl DeviceInfo {
-    pub async fn retrieve<T: Transport>(device: &Device<T>) -> Result<Self, Error> {
+    pub async fn retrieve<T: Transport>(device: &Client<T>) -> Result<Self, Error> {
         let definitions = device
             .parameters()
             .list_definitions(Some(

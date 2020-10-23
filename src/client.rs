@@ -5,19 +5,18 @@ use std::convert::TryInto;
 mod authentication;
 
 // todo:
-//   * /axis-cgi/admin/systemlog.cgi
 //   * /axis-cgi/admin/accesslog.cgi
 //   * /axis-cgi/serverreport.cgi
 
 #[derive(Debug, Clone)]
-pub struct Device<T: Transport> {
+pub struct Client<T: Transport> {
     scheme: http::uri::Scheme,
     authority: http::uri::Authority,
     authentication: authentication::Authentication,
     transport: T,
 }
 
-impl<T: Transport> Device<T> {
+impl<T: Transport> Client<T> {
     pub fn new<U>(transport: T, uri: U) -> Self
     where
         U: Into<http::Uri>,
@@ -48,8 +47,8 @@ impl<T: Transport> Device<T> {
     pub(crate) fn replace_transport<F: FnOnce(T) -> T2, T2: Transport>(
         self,
         replacer: F,
-    ) -> Device<T2> {
-        Device {
+    ) -> Client<T2> {
+        Client {
             scheme: self.scheme,
             authority: self.authority,
             authentication: self.authentication,
@@ -243,7 +242,7 @@ mod tests {
         let realm = "shadow";
         let nonce = "xkcd-221";
 
-        let mut device: Device<_> = crate::mock_device(|req| {
+        let mut device: Client<_> = crate::mock_client(|req| {
             let ctx = digest_auth::AuthContext {
                 username: username.into(),
                 password: password.into(),

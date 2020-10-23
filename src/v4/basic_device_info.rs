@@ -1,7 +1,7 @@
 //! The [basic device info API](https://www.axis.com/vapix-library/subjects/t10037719/section/t10132180/display).
 
 use crate::v4::JsonService;
-use crate::{Device, Transport};
+use crate::{Client, Transport};
 use serde::{Deserialize, Serialize};
 
 /// The basic device info API.
@@ -55,9 +55,9 @@ pub struct Properties {
 }
 
 impl<'a, T: Transport> BasicDeviceInfo<'a, T> {
-    pub(crate) fn new(device: &'a Device<T>, api_version: String) -> Self {
+    pub(crate) fn new(client: &'a Client<T>, api_version: String) -> Self {
         Self(JsonService::new(
-            device,
+            client,
             "/axis-cgi/basicdeviceinfo.cgi",
             api_version,
         ))

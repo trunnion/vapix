@@ -1,5 +1,5 @@
 use super::*;
-use crate::{Device, Error, HyperTransport};
+use crate::{Client, Error, HyperTransport};
 use std::collections::HashMap;
 
 #[derive(Clone)]
@@ -16,12 +16,12 @@ pub async fn new_eavesdrop_device(
 ) -> Result<
     (
         DeviceInfo,
-        Device<EavesdropTransport<HyperTransport>>,
+        Client<EavesdropTransport<HyperTransport>>,
         Writer,
     ),
     Error,
 > {
-    let device = Device::new(HyperTransport::default(), uri.clone());
+    let device = Client::new(HyperTransport::default(), uri.clone());
     let device_info = DeviceInfo::retrieve(&device).await;
     let device_info = device_info?;
 

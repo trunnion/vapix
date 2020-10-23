@@ -1,14 +1,14 @@
-use crate::{Device, Error, Transport};
+use crate::{Client, Error, Transport};
 use serde::{Deserialize, Serialize};
 
 pub(crate) struct JsonService<'a, T: Transport> {
-    device: &'a Device<T>,
+    device: &'a Client<T>,
     uri: http::Uri,
     api_version: String,
 }
 
 impl<'a, T: Transport> JsonService<'a, T> {
-    pub fn new(device: &'a Device<T>, path_and_query: &str, api_version: String) -> Self {
+    pub fn new(device: &'a Client<T>, path_and_query: &str, api_version: String) -> Self {
         Self {
             device,
             uri: device.uri_for(path_and_query).unwrap(),

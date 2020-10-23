@@ -7,7 +7,7 @@ pub use enums::*;
 
 /// A device's application management API.
 pub struct Applications<'a, T: Transport> {
-    device: &'a Device<T>,
+    device: &'a Client<T>,
     _embedded_development_version: String,
     firmware_version: Option<String>,
     soc: Option<SOC>,
@@ -15,7 +15,7 @@ pub struct Applications<'a, T: Transport> {
 }
 
 impl<'a, T: Transport> Applications<'a, T> {
-    pub(crate) async fn new(device: &'a Device<T>) -> Result<Option<Applications<'a, T>>, Error> {
+    pub(crate) async fn new(device: &'a Client<T>) -> Result<Option<Applications<'a, T>>, Error> {
         let mut params = device
             .parameters()
             .list(Some(
@@ -116,7 +116,7 @@ mod tests {
     #[test]
     fn new() {
         crate::test_with_devices(|test_device| async move {
-            let applications = test_device.device.applications().await?;
+            let applications = test_device.client.applications().await?;
 
             let architecture = applications.as_ref().and_then(|a| a.architecture());
             let soc = applications.as_ref().and_then(|a| a.soc());

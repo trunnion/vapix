@@ -8,7 +8,7 @@ Client for [AXIS Communications](https://www.axis.com/en-us) devices' VAPIX API.
 
 Features:
 
-* `vapix::Device` monitors and controls devices running AXIS firmware >= 5.00
+* `vapix::Client` monitors and controls devices running AXIS firmware >= 5.00
 * `vapix::Transport` decouples the library from any [`http`](https://crates.io/crates/http) implementation
 
 Optional features:
@@ -21,10 +21,10 @@ Optional features:
 ```rust
 // Instantiate a Device using `hyper` to communicate
 let uri = http::Uri::from_static("http://user:pass@1.2.3.4");
-let device = vapix::Device::new(axis::HyperTransport::default(), uri);
+let client = vapix::Client::new(axis::HyperTransport::default(), uri);
 
 // Probe for VAPIX APIs supported by this device
-let services = device.services().await?;
+let services = client.services().await?;
 
 // If it supports the basic device info service...
 if let Some(basic_device_info) = services.basic_device_info.as_ref() {
@@ -34,7 +34,7 @@ if let Some(basic_device_info) = services.basic_device_info.as_ref() {
     println!("    serial_number: {:?}", properties.serial_number);
 } else {
     // If not, assume it supports the legacy parameters API, and retrieve those parameters
-    let parameters = device.parameters().list(None).await?;
+    let parameters = client.parameters().list(None).await?;
     println!("product_full_name: {:?}", parameters["root.Brand.ProdFullName"]);
     println!("    serial_number: {:?}", parameters["root.Properties.System.Soc"]);
 }
@@ -44,14 +44,14 @@ if let Some(basic_device_info) = services.basic_device_info.as_ref() {
 
 Use `cargo test`, `cargo check`, `cargo clippy`, `rustfmt` as usual. Open issues with issues, open PRs with changesets.
 
-Many API tests use `crate::mock_device()`, bound to a testing `Transport` which goes to a block instead of to
+Many API tests use `crate::mock_client()`, bound to a testing `Transport` which goes to a block instead of to
 the network. If you want to ensure that a function sends the right request or does the right thing with a certain
 response, mock up a test which covers exactly that.
 
 ```rust
 #[tokio::test]
 async fn update() {
-    let device = crate::mock_device(|req| {
+    let client = crate::mock_client(|req| {
         assert_eq!(req.method(), http::Method::GET);
         assert_eq!(
             req.uri().path_and_query().map(|pq| pq.as_str()),
@@ -64,7 +64,7 @@ async fn update() {
             .body(vec![b"OK".to_vec()])
     });
 
-    let response = device
+    let response = client
         .parameters()
         .update(vec![("foo.bar", "baz quxx")])
         .await;
@@ -77,7 +77,7 @@ async fn update() {
 
 Tests covering safe-to-call APIs use `create::test_with_devices()` to test against recordings of actual devices.
 `test_with_devices()` takes an async block which gets called repeatedly with various `TestDevice`s, containing metadata
-and a `Device`. Tests are free to fail with `Error::UnsupportedFeature`, but assertion failures or other errors will
+and a `Client`. Tests are free to fail with `Error::UnsupportedFeature`, but assertion failures or other errors will
 cause the containing test to fail.
 
 ```rust
@@ -91,7 +91,7 @@ fn test_something() {
         // test_device.device_info.{model, firmware_version, ..} describe the test device
         // test_device.device is a crate::Device<_> and can make arbitrary calls
 
-        let parameters = test_device.device.parameters();
+        let parameters = test_device.client.parameters();
         let all_params = parameters.list_definitions(None).await?;
 
         // assert!() things which should always be true on every device ever

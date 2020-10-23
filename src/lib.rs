@@ -4,14 +4,14 @@
 //#![forbid(missing_docs)]
 #![forbid(unused_variables)]
 
-mod device;
+mod client;
 mod error;
 mod transport;
 
 pub mod v3;
 pub mod v4;
 
-pub use device::Device;
+pub use client::Client;
 pub use error::Error;
 pub(crate) use error::ResultExt;
 pub use transport::Transport;

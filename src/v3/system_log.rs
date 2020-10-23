@@ -7,10 +7,10 @@ use std::cmp::Ordering;
 use std::str::FromStr;
 
 /// A device's system log interface.
-pub struct SystemLog<'a, T: Transport>(&'a Device<T>);
+pub struct SystemLog<'a, T: Transport>(&'a Client<T>);
 
 impl<'a, T: Transport> SystemLog<'a, T> {
-    pub(crate) fn new(device: &'a Device<T>) -> Self {
+    pub(crate) fn new(device: &'a Client<T>) -> Self {
         Self(device)
     }
 
@@ -386,7 +386,7 @@ mod tests {
     #[test]
     fn entries() {
         crate::test_with_devices(|test_device| async move {
-            let entries = test_device.device.system_log().entries().await?;
+            let entries = test_device.client.system_log().entries().await?;
             let parsed = entries
                 .iter()
                 .collect::<Result<Vec<_>, _>>()
