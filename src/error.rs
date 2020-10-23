@@ -4,12 +4,8 @@ use std::fmt;
 /// An error returned by the `vapix` crate.
 #[derive(Debug)]
 pub enum Error {
-    /// An error from the transport.
-    TransportError(crate::transport::Error),
-    /// An HTTP request returned a status code indicating failure.
-    BadStatusCodeError(http::StatusCode),
-    /// An HTTP request returned an unexpected content type.
-    BadContentTypeError(Option<http::header::HeaderValue>),
+    /// An HTTP request failed.
+    HttpRequestFailed(Box<dyn std::error::Error + Send + 'static>),
     /// An HTTP request returned a response which could not be parsed.
     UnparseableResponseError(UnparseableResponseError),
     /// The API call returned a structured error.
@@ -25,14 +21,18 @@ impl std::error::Error for Error {}
 impl fmt::Display for Error {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
-            Error::TransportError(te) => write!(f, "transport error: {}", te),
-            Error::BadStatusCodeError(sc) => write!(f, "bad status code: {}", sc),
-            Error::BadContentTypeError(ct) => write!(f, "bad content type: got {:?}", ct),
+            Error::HttpRequestFailed(te) => write!(f, "HTTP request failed: {}", te),
             Error::UnparseableResponseError(e) => write!(f, "unparseable response: {:?}", e),
             Error::ApiError(e) => write!(f, "JSON API error: {:?}", e),
             Error::UnsupportedFeature => write!(f, "this device does not support that feature"),
             Error::Other(e) => write!(f, "error: {}", e),
         }
+    }
+}
+
+impl From<crate::transport::Error> for Error {
+    fn from(e: crate::transport::Error) -> Self {
+        Error::HttpRequestFailed(e.into_inner())
     }
 }
 
@@ -104,6 +104,47 @@ impl From<RawJsonApiError> for Error {
     }
 }
 
+#[derive(Debug, PartialEq, Eq)]
+pub(crate) struct HttpStatusCodeError(pub http::StatusCode);
+impl std::error::Error for HttpStatusCodeError {}
+impl fmt::Display for HttpStatusCodeError {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "HTTP response returned status code {}", self.0)
+    }
+}
+impl From<HttpStatusCodeError> for Error {
+    fn from(e: HttpStatusCodeError) -> Self {
+        Error::HttpRequestFailed(Box::new(e))
+    }
+}
+
+#[derive(Debug, PartialEq, Eq)]
+pub(crate) struct HttpContentTypeError(Option<Vec<u8>>, &'static str);
+impl HttpContentTypeError {
+    pub fn new(actual: Option<&http::header::HeaderValue>, expected: &'static str) -> Self {
+        Self(actual.map(|v| v.as_bytes().to_vec()), expected)
+    }
+}
+impl std::error::Error for HttpContentTypeError {}
+impl fmt::Display for HttpContentTypeError {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        match &self.0 {
+            None => write!(f, "HTTP response had no Content-Type:, expected {}", self.1),
+            Some(v) => write!(
+                f,
+                "HTTP response had Content-Type: {:?}, expected {}",
+                String::from_utf8_lossy(&v),
+                self.1
+            ),
+        }
+    }
+}
+impl From<HttpContentTypeError> for Error {
+    fn from(e: HttpContentTypeError) -> Self {
+        Error::HttpRequestFailed(Box::new(e))
+    }
+}
+
 pub(crate) trait ResultExt {
     fn map_404_to_unsupported_feature(self) -> Self;
 }
@@ -111,7 +152,9 @@ pub(crate) trait ResultExt {
 impl<T> ResultExt for std::result::Result<T, Error> {
     fn map_404_to_unsupported_feature(self) -> Self {
         match self {
-            Err(Error::BadStatusCodeError(http::StatusCode::NOT_FOUND)) => {
+            Err(Error::HttpRequestFailed(e))
+                if e.downcast_ref() == Some(&HttpStatusCodeError(http::StatusCode::NOT_FOUND)) =>
+            {
                 Err(Error::UnsupportedFeature)
             }
             other => other,

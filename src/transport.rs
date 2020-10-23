@@ -17,23 +17,21 @@ pub trait Transport {
     fn roundtrip(&self, request: http::Request<Vec<u8>>) -> Self::Output;
 }
 
-pub struct Error(Box<dyn std::error::Error + Send>);
+/// An error returned by a `vapix::Transport`.
+///
+/// This is a newtype around a `Box<dyn std::error::Error + …>` just to make transport-related
+/// interfaces more clear.
+pub struct Error(Box<dyn std::error::Error + Send + 'static>);
 
 impl Error {
+    /// Create a `transport::Error` from a generic `std::error::Error`.
     pub fn new<E: std::error::Error + Send + 'static>(error: E) -> Self {
         Error(Box::new(error))
     }
 
-    pub fn is<T: std::error::Error + 'static>(&self) -> bool {
-        self.0.is::<T>()
-    }
-
-    pub fn downcast<T: std::error::Error + 'static>(self) -> Result<Box<T>, Self> {
-        self.0.downcast().map_err(Self)
-    }
-
-    pub fn downcast_ref<T: std::error::Error + 'static>(&self) -> Option<&T> {
-        self.0.downcast_ref()
+    /// Consume the `transport::Error`, returning the `Box<dyn std::error::Error>`.
+    pub fn into_inner(self) -> Box<dyn std::error::Error + Send + 'static> {
+        self.0
     }
 }
 

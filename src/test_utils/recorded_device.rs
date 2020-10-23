@@ -59,7 +59,7 @@ where
                     Ok(Err(Error::UnsupportedFeature)) => {
                         // acceptable failure mode
                     }
-                    Ok(Err(Error::TransportError(e)))
+                    Ok(Err(Error::HttpRequestFailed(e)))
                         if e.downcast_ref()
                             == Some(&TestDeviceTransportError::RequestNotRecorded) =>
                     {

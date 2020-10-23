@@ -126,11 +126,7 @@ impl<T: Transport> Client<T> {
         self.add_authorization_header(&mut request);
 
         // Make the request
-        let response: http::Response<T::Body> = self
-            .transport
-            .roundtrip(request)
-            .await
-            .map_err(Error::TransportError)?;
+        let response: http::Response<T::Body> = self.transport.roundtrip(request).await?;
 
         // See if we should retry
         let (response_parts, response_body) = response.into_parts();
@@ -141,11 +137,7 @@ impl<T: Transport> Client<T> {
             self.add_authorization_header(&mut second_request);
 
             // Send the second request
-            let response: http::Response<_> = self
-                .transport
-                .roundtrip(second_request)
-                .await
-                .map_err(Error::TransportError)?;
+            let response: http::Response<_> = self.transport.roundtrip(second_request).await?;
 
             // See if authentication wants to retry, but… don't
             let (response_parts, response_body) = response.into_parts();
@@ -176,26 +168,25 @@ impl<T: Transport> Client<T> {
                     Err(e) => Err(e),
                 }
             })
-            .await
-            .map_err(crate::Error::TransportError)?;
+            .await?;
 
         // Are we 200 OK?
         if response_parts.status != http::status::StatusCode::OK {
-            return Err(Error::BadStatusCodeError(response_parts.status));
+            return Err(crate::error::HttpStatusCodeError(response_parts.status).into());
         }
 
         // Is this the right content type?
-        let content_type_value = match response_parts.headers.get(http::header::CONTENT_TYPE) {
-            Some(v) => v,
-            None => return Err(Error::BadContentTypeError(None)),
-        };
-        let content_type = content_type_value
-            .to_str()
-            .map_err(|_| Error::BadContentTypeError(Some(content_type_value.clone())))?;
-
-        let left = content_type.splitn(2, ';').next().unwrap();
-        if left != expected_content_type {
-            return Err(Error::BadContentTypeError(Some(content_type_value.clone())));
+        let content_type_value = response_parts.headers.get(http::header::CONTENT_TYPE);
+        if content_type_value
+            .and_then(|v| v.to_str().ok())
+            .and_then(|ct| ct.splitn(2, ';').next())
+            != Some(expected_content_type)
+        {
+            return Err(crate::error::HttpContentTypeError::new(
+                content_type_value,
+                expected_content_type,
+            )
+            .into());
         }
 
         // Success
