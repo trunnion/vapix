@@ -3,6 +3,7 @@
 Client for [AXIS Communications](https://www.axis.com/en-us) devices' VAPIX API. Bullet points:
 
 * Async
+* Cross platform
 * `#![forbid(unsafe_code)]`
 
 Features:
