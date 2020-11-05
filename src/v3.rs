@@ -20,6 +20,7 @@
 
 pub mod application;
 pub mod parameters;
+pub mod recordings;
 pub mod system_log;
 
 pub use application::Applications;

@@ -10,6 +10,64 @@ mod client;
 mod error;
 mod transport;
 
+/// Define a type T which is `impl From<String> for T`, `impl From<T> for String`, and associated
+/// string-ish behaviors.
+macro_rules! string_type {
+    (
+    $(#[$doc:meta])*
+    $v:vis struct $t:ident
+    ) => {
+        $(#[$doc])*
+        #[derive(Debug, Clone, Eq, PartialEq, Hash, serde::Serialize, serde::Deserialize)]
+        #[repr(transparent)]
+        #[serde(transparent)]
+        $v struct $t(String);
+
+        impl $t {
+            /// Creates a new `$t` from a `string`.
+            pub fn new<S: Into<String>>(string: S) -> Self {
+               Self(string.into())
+            }
+
+            /// Unwraps the value.
+            pub fn into_inner(self) -> String {
+                self.0
+            }
+
+            /// Returns a `&str`.
+            pub fn as_str(&self) -> &str {
+                &self.0
+            }
+        }
+
+        impl From<String> for $t {
+            fn from(v: String) -> Self {
+                $t(v)
+            }
+        }
+        impl From<&str> for $t {
+            fn from(v: &str) -> Self {
+                $t(v.to_owned())
+            }
+        }
+        impl From<$t> for String {
+            fn from(v: $t) -> Self {
+                v.0
+            }
+        }
+        impl<'a> From<&'a $t> for &'a str {
+            fn from(v: &'a $t) -> Self {
+                &v.0
+            }
+        }
+        impl AsRef<str> for $t {
+            fn as_ref(&self) -> &str {
+                &self.0
+            }
+        }
+    };
+}
+
 pub mod v3;
 pub mod v4;
 

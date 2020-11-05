@@ -3,6 +3,8 @@
 use crate::*;
 use serde::Deserialize;
 
+string_type!(pub struct DiskId);
+
 /// The disk management API.
 pub struct DiskManagement<'a, T: Transport>(&'a Client<T>, String);
 
