@@ -33,3 +33,9 @@ all_cris: arch.CRISv32
 # gcc -march=v32 produces an executable with the same flags
 arch.CRISv32: nostdlib.c
 	cris-linux-gnu-gcc -g0 -march=v32 -nostdlib -o $@ $^
+
+# The AXIS 210 uses an ARTPEC-2 SOC, which is Architecture::Crisv0
+# 210_4_40_2.bin's /bin/busybox contains E_FLAGS=0x02
+# gcc -march=v32 produces an executable with the same flags
+arch.CRISv0: nostdlib.c
+	cris-linux-gnu-gcc -g0 -march=v10 -nostdlib -o $@ $^

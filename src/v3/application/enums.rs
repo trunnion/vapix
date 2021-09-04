@@ -24,7 +24,13 @@ pub enum Architecture {
     /// Arm v7 with hardware floating point, in little endian byte order, using the GNU Arm embedded
     /// ABI.
     Armv7Hf,
-    /// CRIS, 32-bit revision.
+    /// CRIS v0–v10, i.e. chips up to and including ETRAX 100LX and ARTPEC-2.
+    ///
+    /// These version numbers are defined in the [ETRAX FS Designer's Reference].
+    ///
+    /// [ETRAX FS Designer's Reference]: https://www.axis.com/files/manuals/etrax_fs_des_ref-070821.pdf
+    CrisV0,
+    /// CRIS v32, as used in ETRAX FS and ARTPEC-3.
     CrisV32,
     /// MIPS 32-bit revision 2, in little endian byte order.
     Mips,
@@ -39,6 +45,7 @@ impl Architecture {
             Architecture::Armv6,
             Architecture::Armv7,
             Architecture::Armv7Hf,
+            Architecture::CrisV0,
             Architecture::CrisV32,
             Architecture::Mips,
         ]
@@ -52,6 +59,7 @@ impl Architecture {
             Architecture::Armv6 => "ARMv6",
             Architecture::Armv7 => "ARMv7",
             Architecture::Armv7Hf => "ARMv7-HF",
+            Architecture::CrisV0 => "CRISv0",
             Architecture::CrisV32 => "CRISv32",
             Architecture::Mips => "MIPS",
         }
@@ -64,6 +72,7 @@ impl Architecture {
             "armv6l" => Self::Armv6,
             "armv7l" => Self::Armv7,
             "armv7hf" => Self::Armv7Hf,
+            "crisv0" => Self::CrisV0,
             "crisv32" => Self::CrisV32,
             "mips" => Self::Mips,
             _ => return None,
@@ -77,6 +86,8 @@ impl Architecture {
         use goblin::elf::header::{EI_DATA, ELFDATA2LSB};
         use goblin::elf::header::{EM_AARCH64, EM_ARM, EM_CRIS, EM_MIPS};
 
+        /* Variant 0; may contain v0..10 object. */
+        const EF_CRIS_VARIANT_ANY_V0_V10: u32 = 0x0000_0000;
         /* Variant 1; contains v32 object.  */
         const EF_CRIS_VARIANT_V32: u32 = 0x0000_0002;
         /* Variant 2; contains object compatible with v32 and v10.  */
@@ -97,8 +108,12 @@ impl Architecture {
             EM_AARCH64 => Some(Architecture::Aarch64),
             // CRIS:
             EM_CRIS => match elf.header.e_flags {
-                // 32-bit:
-                EF_CRIS_VARIANT_V32 | EF_CRIS_VARIANT_COMMON_V10_V32 => Some(Architecture::CrisV32),
+                // v32 specific:
+                EF_CRIS_VARIANT_V32 => Some(Architecture::CrisV32),
+                // v0, or v10-compatible:
+                EF_CRIS_VARIANT_ANY_V0_V10 | EF_CRIS_VARIANT_COMMON_V10_V32 => {
+                    Some(Architecture::CrisV0)
+                }
                 // Other:
                 _ => None,
             },
